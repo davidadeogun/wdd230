@@ -1,4 +1,1 @@
-let oLastModif = document.lastModified;
-let el = document.getElementById("current");
-el.textContent = "Last Updated: "+ oLastModif;
-
+document.querySelector("#current").textContent = new Date(Date.now()).getFullYear();
