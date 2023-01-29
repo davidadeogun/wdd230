@@ -19,6 +19,7 @@
 
     nav ul li a {
         border: none;
+        font-size: 1rem;
     }
 
     header .social img {
@@ -39,7 +40,7 @@
         grid-template-rows: repeat(5, 1fr);
         row-gap: 2px;
         padding: 0px;
-        margin: 0;
+        margin: 10px 10px 30px 10px;
 
     }
 
@@ -136,6 +137,13 @@
         font-size: .9rem;
         margin-top: 90px;
     }
-    
+    .main-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer_info {
+        margin-top: 70px;
+    }
     
 }
