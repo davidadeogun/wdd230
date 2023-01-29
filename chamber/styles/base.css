@@ -44,9 +44,12 @@ header .social {
 header img {
     margin-top: 10px;
     margin-left: 8px;
+    height: 80px;
 }
 header .social img {
     margin: 7px;
+    height: 25px;
+    width: 25px;
 }
 nav button {
     margin: .1rem 2vw;
