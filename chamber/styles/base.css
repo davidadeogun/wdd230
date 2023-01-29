@@ -1,0 +1,218 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+header {
+    background-color: #eb721a;
+    display: flex;
+    width: 100%;
+   justify-content: space-between;
+    
+}
+
+
+header h3 {
+    display: block;
+    font-size: 1.3rem;
+}
+header .name {
+    display: block;
+    margin: 0;
+    color: #ffffff;
+    
+}
+header .name p {
+    font-size: .7rem;
+    margin-top: -15px;
+}
+header .social {
+    display: flex;
+    padding: 2px;
+    
+}
+header img {
+    margin-top: 10px;
+    margin-left: 8px;
+}
+header .social img {
+    margin: 7px;
+}
+nav button {
+    margin: .1rem 2vw;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 2rem;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: .8rem 2vw;
+    color: #ffffff;
+    font-size: 1rem;
+}
+nav ul li a:hover {
+    background-color: #ec5b04;
+    color: #ffffff;
+}
+nav ul {
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+#hamburgerBtn {
+     margin-top: 5px;
+     
+     
+     
+}
+#hamburgerBtn span:nth-child(1) {
+    display: block;
+    
+}
+#hamburgerBtn span:nth-child(2) {
+    display: none;
+}
+
+/*When the button is open, the hamburger does not display
+It is the reverse of the 2 declarations above*/
+#hamburgerBtn.open span:nth-child(1) {
+    display: none;
+}
+
+/*When the button is open, the close displays as block*/
+#hamburgerBtn.open span:nth-child(2) {
+    display: block;
+}
+/*     #ec5b04; darker color  */
+/*     #eb721a;   lighter*/
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 1px;
+    padding: 0px;
+    margin: 0;
+    font-size: .7rem;
+   
+}
+
+main .main-hero {
+
+    grid-row: 1;
+    border: 1px solid #ec5b04;
+    padding: 50px;
+}
+
+main .event {
+    grid-row: 2;
+    border: 1px solid #ec5b04;
+    padding: 50px;
+}
+main .weather {
+    grid-row: 3;
+    border: 1px solid #ec5b04;
+    padding: 50px;
+}
+main .news_release {
+    grid-row: 4;
+    border: 1px solid #ec5b04;
+    padding: 50px;
+}
+#main-spotlight {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border: 1px solid #ec5b04;
+    margin-bottom: 20px;
+    
+}
+
+#main-spotlight .spotlight1 {
+    border: 1px solid #ec5b04;
+    padding: 50px;
+    margin: 15px 20px 10px 20px;
+}
+
+#main-spotlight .spotlight2 {
+    border: 1px solid #ec5b04;
+    padding: 50px;
+    margin: 0px 20px 10px 20px;
+}
+#main-spotlight .spotlight3 {
+    border: 1px solid #ec5b04;
+    padding: 50px;
+    margin: 0px 20px 10px 20px;
+    display: none;
+}
+main .join{
+    display: none;
+}
+
+header div .currentDate {
+    color: #fff;
+    font-size: .6rem;
+    margin-top: 90px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #eb721a;
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    
+    
+}
+.footer_name {
+    font-size: 1.1rem;
+    font-weight: 600;
+} 
+footer img {
+    height: 50%;
+    width: 50%;
+}
+footer p {
+    font-size: .8rem;
+}
+.copyright p {
+    font-size: .6rem;
+}
+footer hr {
+    width: 90%;
+}
