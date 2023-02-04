@@ -76,7 +76,9 @@ main .news_release {
     grid-row: 3;
     grid-column: 2/3;
     border: 1px solid #ec5b04;
-    padding: 50px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   background-color: #eb721a;
 }
 main #main-spotlight {
     display: grid;
@@ -86,8 +88,23 @@ main #main-spotlight {
     grid-column: 3;
     grid-row: span 3;
     
+    
 }
+/*CHANGES START HERE*/
 
+#main-spotlight .spotlight3 {
+    display: grid;
+    text-align: center;
+    color: #ffffff;
+    background-color: #eb721a;
+    
+}
+.spotlight3-main {
+    font-size: 1.1rem;
+    margin-top: -40px;
+    font-weight: 600;
+}
+/*CHANGES END HERE*/
 #main-spotlight {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -98,7 +115,7 @@ main #main-spotlight {
     
 }
 #main-spotlight .spotlight1 {
-    border: 1px solid #ec5b04;
+    border: 2px solid #ec5b04;
     padding: 50px;
     margin: 15px 20px 10px 20px;
     grid-row: 1;
