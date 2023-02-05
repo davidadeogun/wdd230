@@ -73,7 +73,7 @@ nav ul li a {
     font-size: .8rem;
 }
 nav ul li a:hover {
-    background-color: #ec5b04;
+    background-color: #5e6472;
     color: #ffffff;
 }
 nav ul {
@@ -122,24 +122,46 @@ main {
    
 }
 
+
 main .main-hero {
 
     grid-row: 1;
     border: 1px solid #ec5b04;
     padding: 50px;
 }
+.main-hero-button {
+    display: block;
+    width: 70%;
+    border: none;
+    background-color: #5e6472;
+    padding: 14px 28px;
+    font-size: .7rem;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #fff;
+    transform: scale(1);
+  transition: transform 0.3s;
+}
+.main-hero-button:hover {
+    transform: scale(1.03);
+}
+.main-hero a {
+    text-decoration: none;
+}
 
 main .event {
     grid-row: 2;
     border: 1px solid #ec5b04;
     padding: 50px;
-    background-color: #eb721a;
+    
 }
 main .weather {
     grid-row: 3;
     border: 1px solid #ec5b04;
     padding: 50px;
-    background-color: #eb721a;
+    
 }
 main .news_release {
     grid-row: 4;
@@ -164,7 +186,7 @@ main .news_release {
     color: #ffffff;
     font-weight: 600;
     line-height: 15px;
-    font-style: italic;
+    
     
 }
 /*changes made END HERE*/
@@ -172,29 +194,31 @@ main .news_release {
 #main-spotlight {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    border: 5px solid #ec5b04;
+    border: 5px solid #eb721a;
     margin-bottom: 20px;
+    font-family: 'Poppins';
     
 }
 /*STARTS HERE*/
 .spotlight1 {
     display: grid;
     text-align: center;
-    color: #ffffff;
-    background-color: #eb721a;
+    color: #000000;
+    
     
 }
 .spotlight1-main {
     font-size: 1.1rem;
     margin-top: -40px;
     font-weight: 600;
+    
 }
 
 .spotlight2 {
     display: grid;
     text-align: center;
-    color: #ffffff;
-    background-color: #eb721a;
+    color: #000000;
+    
     
 }
 .spotlight2-main {
@@ -252,6 +276,13 @@ header div .currentDate {
 .main-footer {
     display: grid;
     grid-template-columns: 1fr;
+    
+}
+
+
+body footer {
+    background-color: #5e6472;
+    margin-bottom: -8px;
 }
 
 
