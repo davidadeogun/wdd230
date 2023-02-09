@@ -112,156 +112,168 @@ It is the reverse of the 2 declarations above*/
 /*     #eb721a;   lighter*/
 
 main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    row-gap: 1px;
-    padding: 0px;
-    margin: 10px 10px 80px 10px;
-    font-size: .7rem;
-   
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+    margin: 1px 1px 20px 1px;
 }
-
-
-main .main-hero {
-
-    grid-row: 1;
-    border: 1px solid #ec5b04;
-    padding: 50px;
+/*section - welcome*/
+.welcome {
+    
+    position: relative;
+    padding: 0;
+    margin: 10px auto;
 }
-.main-hero-button {
-    display: block;
-    width: 70%;
+figure {
+    width: 90%;
+    margin: 10px;
+}
+figure img {
+    width: 100%;
+    padding: 0;
+    object-fit: cover;
+    margin: 0 0 0 2%;
+}
+.button-button {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    background-color: #eb721a;
+    color: #ffffff;
     border: none;
-    background-color: #5e6472;
-    padding: 14px 28px;
-    font-size: .7rem;
-    cursor: pointer;
-    text-align: center;
-    font-family: 'Montserrat';
-    font-weight: bold;
-    color: #fff;
+    padding: 5px;
     transform: scale(1);
   transition: transform 0.3s;
 }
-.main-hero-button:hover {
+
+.button-button:hover {
     transform: scale(1.03);
-}
-.main-hero a {
-    text-decoration: none;
-}
-
-main .event {
-    grid-row: 2;
-    border: 1px solid #ec5b04;
-    padding: 50px;
-    
-}
-main .weather {
-    grid-row: 3;
-    border: 1px solid #ec5b04;
-    padding: 50px;
-    
-}
-main .news_release {
-    grid-row: 4;
-    border: 1px solid #ec5b04;
-    padding: 50px;
-    background-color: #eb721a;
-}
-
-/*changes made STATRT HERE*/
-.news_release {
-    display: grid;
-    text-align: center;
-    
-}
-.news_release_main {
+    background-color: #5e6472;
     color: #ffffff;
-    font-size: large;
-    font-weight:900;
-    padding-bottom: 10px;
 }
-.news_release_p {
-    color: #ffffff;
-    font-weight: 600;
-    line-height: 15px;
-    
-    
-}
-/*changes made END HERE*/
-
-#main-spotlight {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    border: 5px solid #eb721a;
-    margin-bottom: 20px;
-    font-family: 'Poppins';
-    
-}
-/*STARTS HERE*/
-.spotlight1 {
-    display: grid;
-    text-align: center;
+.welcome h1 {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    font-family: 'Miltonian Tattoo', 'Poppins';
     color: #000000;
     
     
 }
-.spotlight1-main {
-    font-size: 1.1rem;
-    margin-top: -40px;
-    font-weight: 600;
+
+
+/*SECTION - RIBBON CUTTING*/
+.ribbon-cutting {
+    background-color: #eb721a;
+    margin: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+.ribbon-cutting a {
+    text-decoration: none;
+    color: #ffffff;
     
+}
+.diamond-shack {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat';
+}
+
+
+
+/*section - weather*/
+.weather {
+    background-color: #eb721a;
+    margin: 10px 50px 10px 50px;
+    text-align: center;
+    color: #ffffff;
+}
+.weather-info {
+    display: flex;
+    justify-content: center;
+    
+}
+.weather-info h3 {
+    margin-left: 50px;
+}
+.wind-speed, .wind-chill {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+/*section - news-release*/
+.news-release {
+    background-color: #eb721a;
+    margin: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+.news-release p {
+    margin: 15px;
+}
+
+
+
+/*hr declaration for all*/
+.weather hr, .spotlight1 hr, .spotlight2 hr {
+    width: 80%;
+}
+
+/*h3 declaration for all*/
+.news-release h3, .spotlight1 h3 , .spotlight2 h3, .weather h3, .ribbon-cutting h3{
+    font-size: 1.2rem;
+    font-family: 'Poppins';
+}
+
+
+
+/*section - spotlight*/
+.main-spotlight{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px 70px 10px;
+    border: 1px solid #eb721a;
+    color: #ffffff;
+}
+
+.spotlight1 {
+    background-color: #eb721a;
+    margin: 15px;
+    text-align: center;
+}
+.spotlight1 a, .spotlight2 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+/*hover for emails and the "more info" in the ribbon cutting section*/
+.spotlight1 a:hover , .spotlight2 a:hover, .ribbon-cutting a:hover{
+    color: #0000EE;
+}
+
+/*section - Join us*/
+.main-join {
+    display: none;
 }
 
 .spotlight2 {
-    display: grid;
-    text-align: center;
-    color: #000000;
-    
-    
-}
-.spotlight2-main {
-    font-size: 1.1rem;
-    margin-top: -40px;
-    font-weight: 600;
-}
-.spotlight3 {
-    display: grid;
-    text-align: center;
-    color: #ffffff;
     background-color: #eb721a;
-    
-}
-.spotlight3-main {
-    font-size: 1.1rem;
-    margin-top: -40px;
-    font-weight: 600;
-}
-/*ends here*/
-
-
-
-#main-spotlight .spotlight1 {
-    border: 1px solid #ec5b04;
-    padding: 50px;
-    margin: 15px 20px 10px 20px;
+    margin: 15px;
+    text-align: center;
 }
 
-#main-spotlight .spotlight2 {
-    border: 1px solid #ec5b04;
-    padding: 50px;
-    margin: 0px 20px 10px 20px;
-}
-#main-spotlight .spotlight3 {
-    border: 1px solid #ec5b04;
-    padding: 50px;
-    margin: 0px 20px 10px 20px;
+.spotlight3 {
+    background-color: #eb721a;
+    margin: 15px;
     display: none;
 }
-main .join{
-    display: none;
-}
+
+
+
 
 header div .currentDate {
     color: #fff;
@@ -278,26 +290,6 @@ header div .currentDate {
     grid-template-columns: 1fr;
     
 }
-
-
-body footer {
-    background-color: #5e6472;
-    margin-bottom: -8px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 footer {
@@ -326,4 +318,8 @@ footer p {
 }
 footer hr {
     width: 90%;
+}
+
+#currently {
+    padding-bottom: 30px;
 }

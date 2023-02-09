@@ -18,6 +18,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat&family=Poppins&family=Roboto&display=swap"
         rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Miltonian+Tattoo&display=swap" rel="stylesheet">
 
     <!--Style Sheets - Normalize, Base, Medium and Large-->
     <link rel="stylesheet" href="styles/normalize.css">
@@ -62,44 +65,83 @@
 
     </header>
     <main>
-        <p class="main-hero">Hero with site name and call to action <!--<img src="images/chamber-hero-img.jpeg" alt="">-->
-        <button type= "button" class="main-hero-button">Join the Chamber</button>
-        </p>
-        <p class="event">Event</p>
-        <p class="weather">Weather</p>
-        <p class="news_release"><span class="news_release_main">News Release</span><span class="news_release_p">Lorem,
-                ipsum dolor sit amet consectetur adipisicing elit.
-                Distinctio culpa consequatur quod alias cumque modi magnam quos accusantium odio? Recusandae mollitia et
-                ipsam impedit dolore.
-                Accusamus ducimus eaque cum ut ad suscipit hic repellat fugit rerum, modi numquam dolorem blanditiis eos
-                enim aspernatur quam
-                consequatur! Explicabo maiores rerum eos beatae?</span></p>
-        <p class="join"><button type="button" class="block-button">Join Us!</button>
-             <span class="button-text">Discover the world of possibilities!</span> </p>
-        
-        
-             <div id="main-spotlight">
-            <p class="spotlight1"> <span class="spotlight1-main">Synergy</span><span class="spotlight1-img"><img src="images/front_loader_FILL0_wght400_GRAD0_opsz48.png"
-                        alt=""></span><span class="spotlight1-p">Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Asperiores, natus!</span>
-                <span class="spotlight1-email">www.wekoowekoo.com</span> <span
-                    class="spotlight1-phone">+909-234-2233-2109</span>
-            </p>
 
-            <p class="spotlight2"> <span class="spotlight2-main">Growth</span><span class="spotlight2-img"><img src="images/front_loader_FILL0_wght400_GRAD0_opsz48.png"
-                        alt=""></span> <span class="spotlight2-p">Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Asperiores, natus!</span>
-                <span class="spotlight2-email">www.wekoowekoo.com</span> <span
-                    class="spotlight2-phone">+909-234-2233-2109</span>
-            </p>
+        <section class="welcome">
+            <h1>Welcome to the Atlanta Chamber</h1>
+            <figure>
+                <img src="images/chamber-hero-img.jpeg" alt=""> <!--The image needs to be changed with an aspect ratio of maybe 16:9. Inspect the aspect ratio for the new image-->
+            </figure>
+            <button class="button-button" type="button">Join the Chamber</button>
+        </section>
 
-            <p class="spotlight3"> <span class="spotlight3-main">Greatness</span><span class="spotlight3-img"><img
-                        src="images/front_loader_FILL0_wght400_GRAD0_opsz48.png" alt=""></span> <span class="spotlight3-p">Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Asperiores, natus!</span>
-                <span class="spotlight3-email">www.wekoowekoo.com</span> <span
-                    class="spotlight3-phone">+909-234-2233-2109</span>
+        <section class="ribbon-cutting">
+            <h3>Ribbon Cutting</h3>
+            <div class="diamond-shack">
+                <img src="images/diamond_FILL0_wght400_GRAD0_opsz48.png" alt="diamond icon">
+                <h4>The Diamond Shack</h4>
+            </div>
+            <p>Join us for the grand opening of tThe </p>
+            <a href="#"> <i>more info...</i></a>
+        </section>
+
+        <section class="weather">
+            <h3>Weather</h3>
+            <div class="weather-info">
+                <img src="images/cloudy_snowing_FILL0_wght400_GRAD0_opsz48.png" alt="weather icon">
+                <h3>23C</h3>
+            </div>
+            <p>Partly Cloudy</p>
+            <hr>
+            <div class="wind-speed">
+                <p>Wind Speed: </p>
+                <p>2.5km/h</p>
+            </div>
+            <div class="wind-chill">
+                <p>Wind Chill:</p>
+                <p>N/A</p>
+            </div>
+        </section>
+
+        <section class="news-release">
+            <h3>News Release</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa minus quam obcaecati nemo magnam aperiam
+                sequi distinctio sit omnis nobis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa minus quam obcaecati nemo magnam aperiam
+                sequi distinctio sit omnis nobis
             </p>
-        </div>
+        </section>
+
+        <section class="main-spotlight">
+            <div class="spotlight1">
+                <h3>Thankful transport</h3>
+                <img src="images/front_loader_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                <p>"We get it there for you!</p>
+                <hr>
+                <a href="#"> <i>hello@theatlanctic.com</i></a>
+                <p>+00-39039393939</p>
+            </div>
+            <div class="spotlight2">
+                <h3>Code Primera</h3>
+                <img src="images/front_loader_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                <p>"We bring you the best</p>
+                <hr>
+                <a href="#"> <i>hello@theatlanctic.com</i></a>
+                <p>+00-39039393939</p>
+            </div>
+            <div class="spotlight3">
+                <h3>Advertise Here</h3>
+                <img src="images/front_loader_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                <p>"Always there for you!</p>
+                <hr>
+                <a href="#"> <i>hello@theatlanctic.com</i></a>
+                <p>+00-39039393939</p>
+            </div>
+        </section>
+        <section class="main-join">
+            <button class="join-us" type="button">Join Us</button>
+            <p>Discover how to join the chamber of commerce and how it will benefit your organization</p>
+        </section>
+
     </main>
     <footer>
         <div class="main-footer">
