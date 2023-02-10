@@ -4,8 +4,6 @@ body {
     
 }
 
-
-
 @media only screen and (min-width: 60rem ) {
     
     
@@ -86,21 +84,38 @@ main {
     display: block;
     text-align: center;
 }
+.spotlight3 a{
+    text-decoration: none;
+    color: #fff;
+}
+.spotlight3 a:hover {
+    color: #0000EE;
+}
 
-figure {
-    width: 100%;
+picture {
     margin: 10px;
 }
-figure img {
+picture img {
     width: 100%;
     object-fit: cover;
         padding: 0px;
         margin: 1% 0 0 0;
 }
+
+.large {
+    display: block;
+    position: absolute;
+    color: #fff;
+    bottom: 25px;
+    left: 20px;
+}
+.medium {
+    display: none;
+}
 .button-button {
     position: absolute;
-    right: 200px;
-    bottom: 100px;
+    right: 80px;
+    bottom: 80px;
 }
 
 

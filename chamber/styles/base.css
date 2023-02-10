@@ -124,21 +124,19 @@ main {
     padding: 0;
     margin: 10px auto;
 }
-figure {
-    width: 90%;
-    margin: 10px;
-}
-figure img {
-    width: 100%;
-    padding: 0;
-    object-fit: cover;
-    margin: 0 0 0 2%;
+
+h1 {
+    position: absolute;
+    left: 20px;
+    font-family: 'Miltonian Tattoo', 'Poppins';
+    font-size: 1.5rem;
+   
 }
 .button-button {
     position: absolute;
     bottom: 30px;
-    right: 40px;
-    background-color: #eb721a;
+    right: 20px;
+    background-color: #5e6472;
     color: #ffffff;
     border: none;
     padding: 5px;
@@ -151,15 +149,18 @@ figure img {
     background-color: #5e6472;
     color: #ffffff;
 }
-.welcome h1 {
+
+.small {
     position: absolute;
-    top: 20px;
-    left: 40px;
-    font-family: 'Miltonian Tattoo', 'Poppins';
-    color: #000000;
-    
-    
-}
+     bottom: 15px;
+     color: #ffffff;
+     left: 15px;
+     display: block;
+ }
+ 
+ .medium, .large {
+     display: none;
+ }
 
 
 /*SECTION - RIBBON CUTTING*/

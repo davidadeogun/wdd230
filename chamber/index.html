@@ -35,7 +35,7 @@
 
 <body>
     <header>
-        <img src="images/tacc_logo.png" alt="Logo">
+        <img src="images/optimized_chamber_logo.webp.webp" alt="Logo">
         <div class="name">
             <h3>The Atlanta</h3>
             <p>Chamber of Commerce</p>
@@ -67,10 +67,15 @@
     <main>
 
         <section class="welcome">
-            <h1>Welcome to the Atlanta Chamber</h1>
-            <figure>
-                <img src="images/chamber-hero-img.jpeg" alt=""> <!--The image needs to be changed with an aspect ratio of maybe 16:9. Inspect the aspect ratio for the new image-->
-            </figure>
+            <h1>Welcome to Atlanta</h1>
+            <picture>
+                <source srcset="images/optimized_large_hero_img.jpg" media="(min-width: 60rem)">
+                <figcaption class="large">Large Image</figcaption>
+                <source srcset="images/optimized_medium_hero_img.jpg" media="(min-width: 35rem) and (max-width: 59rem)">
+                <figcaption class="medium">Medium Image</figcaption>
+                <img src="images/optimized_small_hero_img.jpg" alt="Picture of a team talking"> 
+                <figcaption class="small">Small Image</figcaption>
+            </picture>
             <button class="button-button" type="button">Join the Chamber</button>
         </section>
 
@@ -146,7 +151,7 @@
     <footer>
         <div class="main-footer">
             <div class="footer_img">
-                <img src="images/tacc_logo.png" alt="Chamber Logo">
+                <img src="images/optimized_chamber_logo.webp.webp" alt="Chamber Logo">
                 <p class="footer_name"><em>The Atlanta Chamber of Commerce</em></p>
                 <p><em>267 Peachtree Center Atlanta, GA 30030</em></p>
             </div>

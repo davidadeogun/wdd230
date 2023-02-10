@@ -120,22 +120,38 @@
     }
 
     /*Figure starts here - will be replaced with picture later on*/
-    figure {
-        width: 95%;
-        margin: 10px;
+    
+    
+     h1{
+        position: absolute;
+        top: 30px;
+        font-size: 2.5rem;
     }
-    figure img {
+    
+    picture {
+       
+        margin: 5px;
+    }
+    picture img {
         width: 100%;
         object-fit: cover;
         padding: 0px;
-        margin: 0 0 0 1%;
+       
     }
+  .medium {
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    color: #ffffff;
+    left: 15px;
+}
+  
+  .small, .large {
+    display: none;
+  }
+    
     /*ends here*/
-    .welcome h1{
-        position: absolute;
-        top: 80px;
-        font-size: 2.5rem;
-    }
+    
     .button-button {
         position: absolute;
         bottom: 60px;
