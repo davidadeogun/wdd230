@@ -70,11 +70,11 @@
             <h1>Welcome to Atlanta</h1>
             <picture>
                 <source srcset="images/optimized_large_hero_img.jpg" media="(min-width: 60rem)">
-                <figcaption class="large">Large Image</figcaption>
+                <p class="large">Large Image</p>
                 <source srcset="images/optimized_medium_hero_img.jpg" media="(min-width: 35rem) and (max-width: 59rem)">
-                <figcaption class="medium">Medium Image</figcaption>
+                <p class="medium">Medium Image</p>
                 <img src="images/optimized_small_hero_img.jpg" alt="Picture of a team talking"> 
-                <figcaption class="small">Small Image</figcaption>
+                <h4 class="small">Small Image</h4>
             </picture>
             <button class="button-button" type="button">Join the Chamber</button>
         </section>
@@ -93,18 +93,19 @@
             <h3>Weather</h3>
             <div class="weather-info">
                 <img src="images/cloudy_snowing_FILL0_wght400_GRAD0_opsz48.png" alt="weather icon">
-                <h3>23C</h3>
+                <h3><span id="temp-value">33</span>&deg;C</h3>
             </div>
             <p>Partly Cloudy</p>
             <hr>
             <div class="wind-speed">
                 <p>Wind Speed: </p>
-                <p>2.5km/h</p>
+                <p><span id="wind-speed-value">2.5</span>km/h</p>
             </div>
             <div class="wind-chill">
                 <p>Wind Chill:</p>
-                <p>N/A</p>
+                <p id="wind-chill-display"></p>
             </div>
+            
         </section>
 
         <section class="news-release">
@@ -171,6 +172,7 @@
         </div>
     </footer>
     <script src="scripts/JS.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>
