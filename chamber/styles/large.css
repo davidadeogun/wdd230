@@ -37,6 +37,14 @@ body {
     padding-bottom: 0px
 }
 
+
+/*Display Msg*/
+#group-msg {
+    font-size: 1.1rem;
+    color:#eb721a;
+    text-align: center;
+    font-family: 'Poppins'
+}
 /*Main declarations*/
 main {
     display: grid;

@@ -57,6 +57,13 @@
     footer {
         background-color: #eb721a;
     }
+    #group-msg {
+        font-size: 1rem;
+        color:#eb721a;
+        text-align: center;
+        font-family: 'Poppins';
+  
+    }
 
     /*Main declarations*/
     main {

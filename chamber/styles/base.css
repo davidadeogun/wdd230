@@ -110,7 +110,15 @@ It is the reverse of the 2 declarations above*/
 }
 /*     #ec5b04; darker color  */
 /*     #eb721a;   lighter*/
-
+/*JS Display Message*/
+#group-msg {
+   font-size: 0.7rem;
+    color:#eb721a;
+    text-align: center;
+    margin: 10px 20px 0px 20px;
+    font-family: 'Poppins';
+    
+}
 main {
     display: flex;
     flex-direction: column;
