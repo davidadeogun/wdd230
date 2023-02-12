@@ -113,10 +113,13 @@ It is the reverse of the 2 declarations above*/
 /*JS Display Message*/
 #group-msg {
    font-size: 0.7rem;
-    color:#eb721a;
+    color:#fff;
+    background-color: #5e6472;
     text-align: center;
     margin: 10px 20px 0px 20px;
     font-family: 'Poppins';
+    
+    
     
 }
 main {
@@ -138,6 +141,7 @@ h1 {
     left: 20px;
     font-family: 'Miltonian Tattoo', 'Poppins';
     font-size: 1.5rem;
+    color: #0000ee;
    
 }
 .button-button {

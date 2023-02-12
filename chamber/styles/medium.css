@@ -43,7 +43,7 @@
         font-size: .9rem;
         margin-top: 90px;
     }
-   
+
 
     .main-footer {
         display: grid;
@@ -57,13 +57,18 @@
     footer {
         background-color: #eb721a;
     }
+
     #group-msg {
         font-size: 1rem;
-        color:#eb721a;
+        color: #fff;
+        background-color: #5e6472;
         text-align: center;
-        font-family: 'Poppins';
-  
+        font-family: 'Poppins';  
+        margin: 10px 50px 0px 50px;
+        
+        
     }
+   
 
     /*Main declarations*/
     main {
@@ -71,32 +76,36 @@
         row-gap: 2px;
         grid-template-columns: 60% 40%;
         margin: 25px 25px 60px 25px;
-       
+
     }
-    
+
     /*Grid setting declaration*/
     .welcome {
         display: flex;
         grid-row: 1;
         grid-column: 1/3;
     }
+
     .news-release {
         grid-row: 2;
         padding: 50px;
         grid-column: 1/3;
     }
+
     .main-spotlight {
         grid-row: 3;
         grid-column: 1/3;
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin: 10px 10px 10px 10px;
-       
+
     }
+
     .ribbon-cutting {
         grid-row: 5;
         margin-bottom: 50px;
     }
+
     .main-join {
         display: block;
         background-color: #eb721a;
@@ -105,12 +114,14 @@
         text-align: center;
         grid-row: 4;
         grid-column: 1/3;
-        
+
     }
+
     .main-join p {
         font-size: 1.2rem;
         color: #fff;
     }
+
     .join-us {
         background-color: #5e6472;
         width: 80%;
@@ -127,38 +138,42 @@
     }
 
     /*Figure starts here - will be replaced with picture later on*/
-    
-    
-     h1{
+
+
+    h1 {
         position: absolute;
         top: 30px;
         font-size: 2.5rem;
+        color: #0000ee;
     }
-    
+
     picture {
-       
+
         margin: 5px;
     }
+
     picture img {
         width: 100%;
         object-fit: cover;
         padding: 0px;
-       
+
     }
-  .medium {
-    display: block;
-    position: absolute;
-    bottom: 15px;
-    color: #ffffff;
-    left: 15px;
-}
-  
-  .small, .large {
-    display: none;
-  }
-    
+
+    .medium {
+        display: block;
+        position: absolute;
+        bottom: 15px;
+        color: #ffffff;
+        left: 15px;
+    }
+
+    .small,
+    .large {
+        display: none;
+    }
+
     /*ends here*/
-    
+
     .button-button {
         position: absolute;
         bottom: 60px;
@@ -167,5 +182,5 @@
         font-size: 1.3rem;
         background-color: #5e6472;
     }
-    
+
 }
