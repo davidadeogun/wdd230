@@ -60,5 +60,19 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {
 
 datefield.innerHTML = `${fulldateUK}`;
 
+//Local storage
 
 
+const visitDisplay = document.querySelector("#visit-info");
+const lastVisit = window.localStorage.getItem("last-visit");  
+
+// Determine if this is the first visit or calculate the number of days since the last visit
+if (lastVisit) {
+  const daysSinceLastVisit = Math.round((new Date() - new Date(lastVisit)) / (1000 * 60 * 60 * 24));
+  visitDisplay.textContent = `It has been ${daysSinceLastVisit} days since your last visit.`;
+} else {
+  visitDisplay.textContent = "Welcome! This is your first visit.";
+}
+
+// Store the current visit timestamp in local storage
+localStorage.setItem("last-visit", new Date());
