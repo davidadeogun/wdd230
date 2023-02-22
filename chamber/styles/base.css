@@ -387,3 +387,10 @@ h5 {
     color: red;
     text-align: center;
 }
+
+table, th, td {
+    border: 1px solid #0000EE;
+}
+table {
+    width: 80%;
+}
