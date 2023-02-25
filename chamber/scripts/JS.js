@@ -76,3 +76,16 @@ if (lastVisit) {
 
 // Store the current visit timestamp in local storage
 localStorage.setItem("last-visit", new Date());
+
+
+//Load page when the user submits the form
+// Get the form element
+const form = document.querySelector('form');
+
+// Add event listener to the form submit button
+form.addEventListener('submit', (event) => {
+  event.preventDefault(); // prevent default form submission
+  
+  // Redirect to thankyou.html page
+  window.location.href = 'thankyou.html';
+});

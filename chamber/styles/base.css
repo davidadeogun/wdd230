@@ -394,3 +394,92 @@ table, th, td {
 table {
     width: 80%;
 }
+
+
+
+/* style form container */
+form {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    
+    
+}
+/* style form labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+/* style form inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+/* style required input labels */
+label span {
+    color: #ff0000;
+}
+/* style membership benefits section */
+.membershipBenefits {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 20px;
+    padding: 10px;
+}
+/* style membership benefits heading */
+.membershipBenefits h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+/* style membership benefits list */
+.membershipBenefits ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* style membership benefits list items */
+.membershipBenefits li {
+    margin-bottom: 5px;
+}
+/* style form submission button */
+input[type="submit"] {
+    background-color: #5e6472;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+/* style form submission button on hover */
+input[type="submit"]:hover {
+    background-color: #eb721a;
+}
+
+.main-thankyou {
+    text-align: center;
+    font-family: "Poppins";
+    margin: 70px 0px 500px 0px;
+    font-size: 0.9rem;
+}
+.fill-form {
+    text-align: center;
+    font-family: "Poppins";
+    margin-top: 50px;
+    font-size: 0.7rem;
+}

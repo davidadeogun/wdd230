@@ -193,4 +193,23 @@ body {
         margin: 5px 500px 0px 500px;
     }
 
+    form {
+        
+        position: relative;
+        top: 50%;
+        left: 200%;
+        margin: 0px 0px 200px 0px;
+        padding: 40px;
+        
+        transform: translate(-50%, -50%);
+    }
+        
+   
+    
+    .fill-form {
+        text-align: center;
+        font-family: "Poppins";
+        margin-top: 50px;
+        font-size: 1.2rem;
+    }
 }
