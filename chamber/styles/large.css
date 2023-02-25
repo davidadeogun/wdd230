@@ -212,4 +212,10 @@ body {
         margin-top: 50px;
         font-size: 1.2rem;
     }
+
+    .join-link {
+        text-decoration: none;
+        color: #fff;
+        font-family: "Poppins";
+    }
 }

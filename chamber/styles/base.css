@@ -144,6 +144,11 @@ h1 {
     color: #0000ee;
    
 }
+.join-link {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Poppins";
+}
 
 .button-button {
     position: absolute;
@@ -394,6 +399,7 @@ table, th, td {
 table {
     width: 80%;
 }
+
 
 
 

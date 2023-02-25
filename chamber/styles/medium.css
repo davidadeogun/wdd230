@@ -287,6 +287,11 @@
     margin-top: 50px;
     font-size: 1rem;
 }
+.join-link {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Poppins";
+}
 
 
 }
