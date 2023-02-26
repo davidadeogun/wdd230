@@ -264,14 +264,13 @@
     form {
 
         position: relative;
-        top: 50%;
-        left: 80%;
-        margin: 0px;
+        left: 42%;
         padding: 40px;
-
+        bottom: -90%;
         transform: translate(-50%, -50%);
+        max-width: 675px;
+        margin: 500px 30px -300px 50px;
 
-      
     }
 
     .main-thankyou {
@@ -280,18 +279,60 @@
         font-size: 1.3rem;
         display: block;
         margin: 100px 0px 600px 0px;
- }
- .fill-form {
-    text-align: center;
-    font-family: "Poppins";
-    margin-top: 50px;
-    font-size: 1rem;
-}
-.join-link {
-    text-decoration: none;
-    color: #fff;
-    font-family: "Poppins";
+    }
+
+    .fill-form {
+        text-align: center;
+        font-family: "Poppins";
+        font-size: 1.2rem;
+    }
+
+    .join-link {
+        text-decoration: none;
+        color: #fff;
+        font-family: "Poppins";
+    }
+
+    #join-main {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .offer-text {
+        font-size: 1.5rem;
+    
+    }
+    .text-title {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    .sub-type {
+        font-weight: bolder;
+        font-size: 2rem;
+        font-family: "Arial";
+    }
+    label {
+        font-size: 1.4rem;
+    }
+    input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;
 }
 
+input[type="submit"] {
+    font-size: 1.3rem;
+}
+    .benefits-btn {
+        padding: 10px 50px 10px 50px;
+    }
+    .benefits-btn {
+        font-size: 1.3rem;
+    }
 
 }

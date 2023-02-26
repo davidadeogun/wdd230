@@ -1,22 +1,29 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
 
 /*----------- apply a natural box layout model to all elements --------------*/
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 
 body {
     font-family: 'Poppins', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    
+
 }
 
 header {
     background-color: #eb721a;
     display: flex;
     width: 100%;
-   justify-content: space-between;
-    
+    justify-content: space-between;
+
 }
 
 
@@ -24,40 +31,45 @@ header h3 {
     display: block;
     font-size: 1.3rem;
 }
+
 header .name {
     display: block;
     margin: 0;
     color: #ffffff;
-    
+
 }
 
- 
+
 header .name p {
     font-size: .7rem;
     margin-top: -15px;
 }
+
 header .social {
     display: flex;
     padding: 2px;
-    
+
 }
+
 header img {
     margin-top: 10px;
     margin-left: 8px;
     height: 80px;
 }
+
 header .social img {
     margin: 7px;
     height: 25px;
     width: 25px;
 }
+
 nav button {
     margin: .1rem 2vw;
     background-color: transparent;
     border: none;
     color: #ffffff;
     font-size: 2rem;
-    
+
 }
 
 nav ul {
@@ -65,6 +77,7 @@ nav ul {
     padding: 0;
     margin: 0;
 }
+
 nav ul li a {
     text-decoration: none;
     display: block;
@@ -72,10 +85,12 @@ nav ul li a {
     color: #ffffff;
     font-size: .8rem;
 }
+
 nav ul li a:hover {
     background-color: #5e6472;
     color: #ffffff;
 }
+
 nav ul {
     display: none;
 }
@@ -85,15 +100,17 @@ nav ul.open {
 }
 
 #hamburgerBtn {
-     margin-top: 5px;
-     
-     
-     
+    margin-top: 5px;
+
+
+
 }
+
 #hamburgerBtn span:nth-child(1) {
     display: block;
-    
+
 }
+
 #hamburgerBtn span:nth-child(2) {
     display: none;
 }
@@ -108,29 +125,32 @@ It is the reverse of the 2 declarations above*/
 #hamburgerBtn.open span:nth-child(2) {
     display: block;
 }
+
 /*     #ec5b04; darker color  */
 /*     #eb721a;   lighter*/
 /*JS Display Message*/
 #group-msg {
-   font-size: 0.7rem;
-    color:#fff;
+    font-size: 0.7rem;
+    color: #fff;
     background-color: #5e6472;
     text-align: center;
     margin: 10px 20px 0px 20px;
     font-family: 'Poppins';
-    
-    
-    
+
+
+
 }
+
 main {
     display: flex;
     flex-direction: column;
     row-gap: 2px;
     margin: 1px 1px 20px 1px;
 }
+
 /*section - welcome*/
 .welcome {
-    
+
     position: relative;
     padding: 0;
     margin: 10px auto;
@@ -142,8 +162,9 @@ h1 {
     font-family: 'Miltonian Tattoo', 'Poppins';
     font-size: 1.5rem;
     color: #0000ee;
-   
+
 }
+
 .join-link {
     text-decoration: none;
     color: #fff;
@@ -159,7 +180,7 @@ h1 {
     border: none;
     padding: 5px;
     transform: scale(1);
-  transition: transform 0.3s;
+    transition: transform 0.3s;
 }
 
 .button-button:hover {
@@ -170,15 +191,16 @@ h1 {
 
 .small {
     position: absolute;
-     bottom: 15px;
-     color: #ffffff;
-     left: 15px;
-     display: block;
- }
- 
- .medium, .large {
-     display: none;
- }
+    bottom: 15px;
+    color: #ffffff;
+    left: 15px;
+    display: block;
+}
+
+.medium,
+.large {
+    display: none;
+}
 
 
 /*SECTION - RIBBON CUTTING*/
@@ -188,11 +210,13 @@ h1 {
     text-align: center;
     color: #ffffff;
 }
+
 .ribbon-cutting a {
     text-decoration: none;
     color: #ffffff;
-    
+
 }
+
 .diamond-shack {
     display: flex;
     justify-content: center;
@@ -208,15 +232,19 @@ h1 {
     text-align: center;
     color: #ffffff;
 }
+
 .weather-info {
     display: flex;
     justify-content: center;
-    
+
 }
+
 .weather-info h3 {
     margin-left: 50px;
 }
-.wind-speed, .wind-chill {
+
+.wind-speed,
+.wind-chill {
     display: flex;
     justify-content: space-around;
     margin-left: 10px;
@@ -232,6 +260,7 @@ h1 {
     color: #ffffff;
     text-align: center;
 }
+
 .news-release p {
     margin: 15px;
 }
@@ -239,12 +268,18 @@ h1 {
 
 
 /*hr declaration for all*/
-.weather hr, .spotlight1 hr, .spotlight2 hr {
+.weather hr,
+.spotlight1 hr,
+.spotlight2 hr {
     width: 80%;
 }
 
 /*h3 declaration for all*/
-.news-release h3, .spotlight1 h3 , .spotlight2 h3, .weather h3, .ribbon-cutting h3{
+.news-release h3,
+.spotlight1 h3,
+.spotlight2 h3,
+.weather h3,
+.ribbon-cutting h3 {
     font-size: 1.2rem;
     font-family: 'Poppins';
 }
@@ -252,7 +287,7 @@ h1 {
 
 
 /*section - spotlight*/
-.main-spotlight{
+.main-spotlight {
     display: flex;
     flex-direction: column;
     margin: 10px 10px 70px 10px;
@@ -265,12 +300,17 @@ h1 {
     margin: 15px;
     text-align: center;
 }
-.spotlight1 a, .spotlight2 a {
+
+.spotlight1 a,
+.spotlight2 a {
     text-decoration: none;
     color: #ffffff;
 }
+
 /*hover for emails and the "more info" in the ribbon cutting section*/
-.spotlight1 a:hover , .spotlight2 a:hover, .ribbon-cutting a:hover{
+.spotlight1 a:hover,
+.spotlight2 a:hover,
+.ribbon-cutting a:hover {
     color: #0000EE;
 }
 
@@ -304,10 +344,11 @@ header div .currentDate {
     height: 70%;
     margin-bottom: -60px;
 }
+
 .main-footer {
     display: grid;
     grid-template-columns: 1fr;
-    
+
 }
 
 
@@ -318,23 +359,28 @@ footer {
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
-    
-    
+
+
 }
+
 .footer_name {
     font-size: 1.1rem;
     font-weight: 600;
-} 
+}
+
 footer img {
     height: 50%;
     width: 50%;
 }
+
 footer p {
     font-size: .8rem;
 }
+
 .copyright p {
     font-size: .6rem;
 }
+
 footer hr {
     width: 90%;
 }
@@ -351,36 +397,43 @@ footer hr {
     display: flex;
     flex-direction: column;
 }
+
 h2 {
     font-family: 'Miltonian Tattoo', 'Poppins';
     font-size: 1.5rem;
     color: #0000ee;
     text-align: center;
 }
+
 .discover-paragraph {
     text-align: center;
     font-family: 'Poppins';
     font-size: .7rem;
 }
-.discover-div p{
+
+.discover-div p {
     font-family: "Poppins";
     font-size: .6rem;
     text-align: center;
     margin: 0px 10px 30px 10px;
-    
+
 }
+
 picture {
     width: 100%;
     height: auto;
-    
-    
+
+
 }
+
 picture img {
     width: 100%;
 }
+
 .discover-div {
     margin-bottom: 20px;
 }
+
 h5 {
     text-align: center;
     font-family: "Montserrat";
@@ -393,9 +446,12 @@ h5 {
     text-align: center;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid #0000EE;
 }
+
 table {
     width: 80%;
 }
@@ -410,16 +466,19 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
     max-width: 600px;
-    padding: 20px;
-    
-    
+    padding: 10px;
+
+
 }
+
 /* style form labels */
 label {
     display: block;
+    font-size: .8rem;
     font-weight: bold;
     margin-bottom: 5px;
 }
+
 /* style form inputs */
 input[type="text"],
 input[type="email"],
@@ -428,37 +487,17 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 3px;
     font-size: 16px;
-    padding: 10px;
+    padding: 8px;
     width: 100%;
 }
+
 /* style required input labels */
 label span {
     color: #ff0000;
 }
-/* style membership benefits section */
-.membershipBenefits {
-    background-color: #f7f7f7;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    margin-top: 20px;
-    padding: 10px;
-}
-/* style membership benefits heading */
-.membershipBenefits h3 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-/* style membership benefits list */
-.membershipBenefits ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-/* style membership benefits list items */
-.membershipBenefits li {
-    margin-bottom: 5px;
-}
+
+
+
 /* style form submission button */
 input[type="submit"] {
     background-color: #5e6472;
@@ -472,9 +511,14 @@ input[type="submit"] {
     text-decoration: none;
     width: 100%;
 }
+
 /* style form submission button on hover */
 input[type="submit"]:hover {
     background-color: #eb721a;
+}
+
+#membershipLevel {
+    font-size: .8rem;
 }
 
 .main-thankyou {
@@ -483,9 +527,89 @@ input[type="submit"]:hover {
     margin: 70px 0px 500px 0px;
     font-size: 0.9rem;
 }
+
 .fill-form {
     text-align: center;
     font-family: "Poppins";
     margin-top: 50px;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+}
+
+.benefits-btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.memberBenefits {
+    margin: 15px;
+}
+
+.benefits ul li {
+
+    list-style: none;
+}
+
+.benefits {
+    margin: 25px;
+    text-align: center;
+    border: none;
+}
+
+.benefits-free {
+    border: 3px solid #eb721a;
+    ;
+    margin: 7px;
+    background-color: #add8e6;
+}
+
+.benefits-free ul li {
+    font-style: italic;
+
+}
+
+.benefits-bronze {
+    border: 3px solid #eb721a;
+    margin: 7px;
+    background-color: #cd7f32;
+}
+
+.benefits-silver {
+    border: 3px solid #eb721a;
+    margin: 7px;
+    background-color: #c0c0c0;
+}
+
+.benefits-gold {
+    border: 3px solid #eb721a;
+    ;
+    margin: 7px;
+    background-color: #ffd700;
+}
+
+
+.benefits-btn {
+    margin-bottom: 7px;
+    background-color: #5e6472;
+    color: #fff;
+    padding: 5px 20px 5px 20px;
+    font-family: "Georgia";
+    border: none;
+
+}
+
+.offer-text {
+    font-family: "Poppins";
+    text-align: center;
+    margin: 50px 10px 30px 10px;
+}
+
+.text-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.sub-type {
+    font-weight: bolder;
+    font-size: 1.6rem;
+    font-family: "Arial";
 }

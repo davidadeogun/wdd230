@@ -65,59 +65,106 @@
 
 
     </header>
-    <p class="fill-form">Please fill out the form and we will get back to you as soon as possible.</p>
-    <main>
-        
-        <form action="thankyou.html" method="get">
-            <label for="firstName">First Name<span>*</span></label>
-            <input type="text" id="firstName" name="firstName" required>
-            <br><br>
-            <label for="lastName">Last Name<span>*</span></label>
-            <input type="text" id="lastName" name="lastName" required>
-            <br><br>
-            <label for="positionTitle">Business Position Title</label>
-            <input type="text" id="positionTitle" name="positionTitle" pattern="[A-Za-z\s-]{7,}">
-            <br><br>
-            <label for="email">Email<span>*</span></label>
-            <input type="email" id="email" name="email" placeholder="e.g. example@example.com" required>
-            <br><br>
-            <label for="cellPhone">Cell Phone<span>*</span></label>
-            <input type="tel" id="cellPhone" name="cellPhone" required>
-            <br><br>
-            <label for="businessName">Business Name/Title<span>*</span></label>
-            <input type="text" id="businessName" name="businessName" required>
-            <br><br>
+
+    <main id="join-main">
+        <p class="offer-text">Subscribe to any of our membership options and gain exclusive access to a range of benefits.</p>
+        <div> <!--main div that encloses the memberbenefits and the form-->
+            <div class="memberBenefits"> <!--beginning of member benefits div only-->
+                <div class="benefits">
+                    <div class="benefits-free">
+                        <p class="text-title">NLP Membership</p>
+                        <p class="sub-type">Free</p>
+                        <ul>
+                            <li>Free forever</li>
+                            <li>Access to annual events</li>
+                            <li>Notify of </li>
+                        </ul>
+                        <button class="benefits-btn"> <a href="#bottom">Suscribe</a></button>
+                    </div>
+                    <div class="benefits-bronze">
+                        <p class="text-title">Bronze Membership</p>
+                        <p class="sub-type">$30/month</p>
+                        <ul>
+                            <li>Free forever</li>
+                            <li>Access to annual events</li>
+                            <li>Notify of </li>
+                        </ul>
+                        <button class="benefits-btn"> <a href="#bottom">Subscribe</a></button>
+                    </div>
+                    <div class="benefits-silver">
+                        <p class="text-title"> Silver Membership</p>
+                        <p class="sub-type">$50/month</p>
+                        <ul>
+                            <li>Free forever</li>
+                            <li>Access to annual events</li>
+                            <li>Notify of </li>
+                        </ul>
+                        <button class="benefits-btn"> <a href="#bottom">Subscribe</a></button>
+                    </div>
+                    <div class="benefits-gold">
+                        <p class="text-title">Gold Membership</p>
+                        <p class="sub-type">$100/month</p>
+                        <ul>
+                            <li>Free forever</li>
+                            <li>Access to annual events</li>
+                            <li>Notify of </li>
+                        </ul>
+                        <button class="benefits-btn"> <a href="#bottom">Subscribe</a></button>
+                    </div>
+                </div> <!--end of member benefits div only-->
 
 
-            <label for="membershipLevel">Membership Level</label>
-            <select id="membershipLevel" name="membershipLevel">
-                <option value="NP Membership">NP Membership</option>
-                <option value="Bronze Membership">Bronze Membership</option>
-                <option value="Silver Membership">Silver Membership</option>
-                <option value="Gold Membership">Gold Membership</option>
-            </select>
+                <br>
+                <br>
+
+                <div> <!--beginning of div that encloses the form only-->
+                    <div>
+                  <p id="bottom"></p>
+                        <p class="fill-form">Please fill out the form and we will get back to you as soon as possible.</p>
+                    </div>
+                    <form action="thankyou.html" method="get">
+                        <label for="firstName">First Name<span>*</span></label>
+                        <input type="text" id="firstName" name="firstName" required>
+                        <br><br>
+                        <label for="lastName">Last Name<span>*</span></label>
+                        <input type="text" id="lastName" name="lastName" required>
+                        <br><br>
+                        <label for="positionTitle">Business Position Title</label>
+                        <input type="text" id="positionTitle" name="positionTitle" pattern="[A-Za-z\s-]{7,}">
+                        <br><br>
+                        <label for="email">Email<span>*</span></label>
+                        <input type="email" id="email" name="email" placeholder="e.g. example@example.com" required>
+                        <br><br>
+                        <label for="cellPhone">Cell Phone<span>*</span></label>
+                        <input type="tel" id="cellPhone" name="cellPhone" required>
+                        <br><br>
+                        <label for="businessName">Business Name/Title<span>*</span></label>
+                        <input type="text" id="businessName" name="businessName" required>
+                        <br><br>
+                        <label for="membershipLevel">Membership Level</label>
+                        <select id="membershipLevel" name="membershipLevel">
+                            <option value="NP Membership">NP Membership</option>
+                            <option value="Bronze Membership">Bronze Membership</option>
+                            <option value="Silver Membership">Silver Membership</option>
+                            <option value="Gold Membership">Gold Membership</option>
+                        </select>
+                        <br><br>
+                        <br>
+                        <label for="businessDescription">Briefly Describe Your Business</label>
+                        <textarea id="businessDescription" name="businessDescription"></textarea>
+                        <br><br>
+                        <input type="hidden" id="formDate" name="formDate" value="">
+
+                        <input type="submit" value="Submit Form">
+                    </form>
+                </div> <!--end of form div-->
+
+            </div> <!--end ogf main div that encloses the member benefits and the form-->
 
 
-            <br><br>
-            <div class="membershipBenefits">
-                <h3>Membership Benefits:</h3>
-                <ul>
-                    <li>NP Membership: No fee</li>
-                    <li>Bronze Membership: $50/year</li>
-                    <li>Silver Membership: $100/year</li>
-                    <li>Gold Membership: $200/year</li>
-                </ul>
-                <p>Benefits increase with higher membership levels.</p>
-            </div>
 
-            <br>
-            <label for="businessDescription">Briefly Describe Your Business</label>
-            <textarea id="businessDescription" name="businessDescription"></textarea>
-            <br><br>
-            <input type="hidden" id="formDate" name="formDate" value="<?php echo date('Y-m-d H:i:s'); ?>">
-            <!--Work on this-->
-            <input type="submit" value="Submit Form">
-        </form>
+
+
     </main>
 
 

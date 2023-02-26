@@ -196,12 +196,14 @@ body {
     form {
         
         position: relative;
-        top: 50%;
-        left: 200%;
-        margin: 0px 0px 200px 0px;
+        min-width: 960px;
+        top: 20%;
+        left: -25%;
+        margin-top: 0px;
+        margin-bottom: -800px;
         padding: 40px;
-        
-        transform: translate(-50%, -50%);
+        transform: translate(-90%, -108%);
+        float: left;
     }
         
    
@@ -211,11 +213,30 @@ body {
         font-family: "Poppins";
         margin-top: 50px;
         font-size: 1.2rem;
+        display: none;
     }
 
     .join-link {
         text-decoration: none;
         color: #fff;
         font-family: "Poppins";
+    }
+    .memberBenefits {
+        width: 40%;
+        float: right;
+       
+        
+    }
+    #join-main {
+        display: flex;
+        flex-direction: column;
+      
+    }
+    .benefits-btn {
+        display: none;
+    }
+
+    #businessDescription {
+        padding: 40px;
     }
 }
