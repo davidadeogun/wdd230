@@ -535,10 +535,6 @@ input[type="submit"]:hover {
     font-size: 0.9rem;
 }
 
-.benefits-btn a {
-    text-decoration: none;
-    color: #fff;
-}
 
 .memberBenefits {
     margin: 15px;
@@ -548,20 +544,23 @@ input[type="submit"]:hover {
 
     list-style: none;
     color: #000;
-    font-family:"Poppins";
-    line-height: 1.5rem;
+    font-family: "Poppins";
+    line-height: 1.3rem;
+    margin-bottom: 0px;
+
+
 }
 
 .benefits {
     margin: 25px;
     text-align: center;
     border: none;
+
 }
 
 .benefits-free {
     border: 3px solid #eb721a;
-    ;
-    margin: 7px;
+    margin: 7px 7px 25px 7px;
     background-color: #add8e6;
 }
 
@@ -569,33 +568,37 @@ input[type="submit"]:hover {
 
 .benefits-bronze {
     border: 3px solid #eb721a;
-    margin: 7px;
+    margin: 7px 7px 25px 7px;
     background-color: #cd7f32;
 }
 
 .benefits-silver {
     border: 3px solid #eb721a;
-    margin: 7px;
+    margin: 7px 7px 25px 7px;
     background-color: #c0c0c0;
 }
 
 .benefits-gold {
     border: 3px solid #eb721a;
-    ;
-    margin: 7px;
+    margin: 7px 7px 25px 7px;
     background-color: #ffd700;
 }
 
 
 .benefits-btn {
-    margin-bottom: 7px;
+
     background-color: #5e6472;
     color: #fff;
-    padding: 5px 20px 5px 20px;
+
     font-family: "Georgia";
     border: none;
-
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 10px 20px 15px 20px;
 }
+
+
+
 
 .offer-text {
     font-family: "Poppins";
