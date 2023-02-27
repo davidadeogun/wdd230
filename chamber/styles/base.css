@@ -547,6 +547,9 @@ input[type="submit"]:hover {
 .benefits ul li {
 
     list-style: none;
+    color: #000;
+    font-family:"Poppins";
+    line-height: 1.5rem;
 }
 
 .benefits {
@@ -562,10 +565,7 @@ input[type="submit"]:hover {
     background-color: #add8e6;
 }
 
-.benefits-free ul li {
-    font-style: italic;
 
-}
 
 .benefits-bronze {
     border: 3px solid #eb721a;

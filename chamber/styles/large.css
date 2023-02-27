@@ -196,14 +196,20 @@ body {
     form {
         
         position: relative;
-        min-width: 960px;
-        top: 20%;
-        left: -25%;
+        min-width: 720px;
+        top: 0%;
+        left: -55%;
         margin-top: 0px;
         margin-bottom: -800px;
-        padding: 40px;
-        transform: translate(-90%, -108%);
+        padding: 90px;
+        transform: translate(-90%, -107%);
         float: left;
+    }
+    .memberBenefits {
+        width: 30%;
+        float: right;
+        transform: translate(-25%, 5%);
+        position: relative;
     }
         
    
@@ -221,12 +227,8 @@ body {
         color: #fff;
         font-family: "Poppins";
     }
-    .memberBenefits {
-        width: 40%;
-        float: right;
-       
-        
-    }
+    
+
     #join-main {
         display: flex;
         flex-direction: column;
@@ -237,6 +239,6 @@ body {
     }
 
     #businessDescription {
-        padding: 40px;
+        padding: 70px;
     }
 }
