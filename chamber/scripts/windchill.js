@@ -1,4 +1,4 @@
-let windSpeedKm = parseFloat(document.querySelector("#wind-speed-value").innerHTML);
+let windSpeedKm = parseInt(document.querySelector("#wind-speed-value").innerHTML);
 let tempCelsius = parseInt(document.querySelector("#temp-value").innerHTML);
 
 //Convert Celsius to fahrenheit

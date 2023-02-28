@@ -6,7 +6,7 @@ let displayMsg = "🤝🏼 Come join us for the chamber meet and greet Wednesday
 
 let Message = function() {
     if (day ==  1 || day == 2) {
-        document.querySelector("#group-msg").textContent = displayMsg;
+        document.querySelector("#group-msg").innerHTML = displayMsg;
     }
     
 };
