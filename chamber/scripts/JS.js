@@ -45,9 +45,13 @@ function toggleMenu() {
 const x = document.querySelector("#hamburgerBtn");
 x.onclick = toggleMenu;
 
-let oLastModif = document.lastModified;
-let el = document.querySelector("#currently");
-el.innerHTML = "Last Modification: "+ oLastModif;
+//let oLastModif = document.lastModified;
+//let el = document.querySelector("#currently");
+//el.innerHTML = "Last Modification: "+ oLastModif;
+const el = document.querySelector("#currently");
+if (el) {
+  el.innerHTML = "Last Modification: " + document.lastModified;
+}
 
 
 const datefield = document.querySelector(".currentDate");
@@ -64,19 +68,22 @@ datefield.innerHTML = `${fulldateUK}`;
 
 //Local storage
 const visitDisplay = document.querySelector("#visit-info");
-const lastVisit = window.localStorage.getItem("last-visit");  
+if (visitDisplay) {
+  const lastVisit = window.localStorage.getItem("last-visit");  
 
-// Determine if this is the first visit or calculate the number of days since the last visit
-if (lastVisit) {
-  const daysSinceLastVisit = Math.round((new Date() - new Date(lastVisit)) / (1000 * 60 * 60 * 24));
-  visitDisplay.innerHTML = "It has been " + daysSinceLastVisit + " day(s) since your last visit.";
+  // Determine if this is the first visit or calculate the number of days since the last visit
+  if (lastVisit) {
+    const daysSinceLastVisit = Math.round((new Date() - new Date(lastVisit)) / (1000 * 60 * 60 * 24));
+    visitDisplay.innerHTML = "It has been " + daysSinceLastVisit + " day(s) since your last visit.";
 
-} else {
-  visitDisplay.innerHTML = "Welcome! This is your first visit.";
+  } else {
+    visitDisplay.innerHTML = "Welcome! This is your first visit.";
+  }
+
+  // Store the current visit timestamp in local storage
+  localStorage.setItem("last-visit", new Date());
 }
 
-// Store the current visit timestamp in local storage
-localStorage.setItem("last-visit", new Date());
 
 
 //Load page when the user submits the form
@@ -84,9 +91,12 @@ localStorage.setItem("last-visit", new Date());
 const form = document.querySelector('form');
 
 // Add event listener to the form submit button
-form.addEventListener('submit', (event) => {
-  event.preventDefault(); // prevent default form submission
-  
-  // Redirect to thankyou.html page
-  window.location.href = 'thankyou.html';
-});
+if (form) {
+  form.addEventListener('submit', (event) => {
+    event.preventDefault(); // prevent default form submission
+    
+    // Redirect to thankyou.html page
+    window.location.href = 'thankyou.html';
+  });
+}
+
