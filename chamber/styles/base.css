@@ -616,3 +616,41 @@ input[type="submit"]:hover {
     font-size: 1.6rem;
     font-family: "Arial";
 }
+
+
+
+.company-list li {
+    border: 1px solid #eb721a;
+    margin: 20px;
+    text-align: center;
+    list-style-type: none;
+    box-shadow: 0 2px 0 #006600, 
+    0 3px 0 #005900, 
+    0 4px 0 #004c00, 
+    0 6px 0 #003300, 
+    0 8px 0 #002600, 
+    0 10px 0 #001900, 
+    0 12px 0 #000d00;
+    
+}
+
+
+
+.company-list li a{
+    text-decoration: none;
+    font-size: 0.7rem;
+    color: #0000ee;
+}
+
+
+
+.company-list li img {
+    margin: 10px;
+    width: 30%;
+   
+}
+.company-address, .phone-number, .membership-level {
+    font-size: 0.8rem;
+    margin: 10px;
+    font-family: "Poppins";
+}

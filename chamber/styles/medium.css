@@ -74,7 +74,7 @@
     main {
         display: grid;
         row-gap: 2px;
-        grid-template-columns: 60% 40%;
+        /*grid-template-columns: 1fr 1fr;*/
         margin: 25px 25px 60px 25px;
 
     }
@@ -334,5 +334,29 @@ input[type="submit"] {
     .benefits-btn {
         font-size: 1.3rem;
     }
+
+
+    /*Directory declarations*/
+    .company-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .company-list li:hover {
+        transform: scale(1.1);
+      }
+      .company-list li{
+        transition: transform 0.2s ease-in-out;
+        box-shadow: 0 2px 0 #006600, 
+        0 3px 0 #005900, 
+        0 4px 0 #004c00, 
+        0 6px 0 #003300, 
+        0 8px 0 #002600, 
+        0 10px 0 #001900, 
+        0 12px 0 #000d00;
+      }
 
 }
