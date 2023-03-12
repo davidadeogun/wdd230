@@ -1,35 +1,4 @@
-/*let windSpeedKm = 0;
-let tempCelsius = 0;
 
-const windSpeedValue = document.querySelector("#wind-speed-value");
-const tempValue = document.querySelector("#temp-value");
-if (windSpeedValue && tempValue) {
-  windSpeedKm = parseInt(windSpeedValue.innerHTML);
-  tempCelsius = parseInt(tempValue.innerHTML);
-}
-
-//Convert Celsius to fahrenheit
-let temFah = (tempCelsius * 9 / 5) + 32;
-
-//Convert Km to Miles
-let windSpeedMiles = windSpeedKm * 1.609;
-
-//Calculate windchill
-let windChill = 35.74 + 0.6215 * temFah - 35.75 * Math.pow(windSpeedMiles, 0.16) + 0.4275 * temFah * Math.pow(windSpeedMiles, 0.16);
-
-//store function as a variable
-let displayResult = function() {
-  const windChillDisplay = document.querySelector("#wind-chill-display");
-  if (windChillDisplay && windSpeedMiles > 3 && temFah <= 50) {
-    windChillDisplay.textContent = windChill.toFixed(2) + "°F";
-  } else if (windChillDisplay) {
-    windChillDisplay.textContent = "N/A";
-  }
-};
-
-//call the function 
-displayResult();
-*/
 const url = "https://api.openweathermap.org/data/2.5/weather?q=Atlanta,US&appid=4009c74d236b511eec4482ecef547e48&units=imperial";
 
 let WeatherIcon = document.querySelector('#weather-icon');
@@ -51,15 +20,22 @@ async function apiFetch() {
       throw Error(await response.text());
     }
   } catch (error) {
-    console.log(error);
+    console.log();
   }
 }
 
 apiFetch();
 
 function displayResults(weatherData) {
-  const tempCelsius = (weatherData.main.temp - 32) * 5 / 9; // Convert Fahrenheit to Celsius
-  const windSpeedKm = weatherData.wind.speed * 1.609; // Convert mph to km/h
+
+  {
+    if (!weatherData.main || !weatherData.wind) {
+      console.log("Error: missing 'main' or 'wind' property in weather data");
+      return;
+    }
+
+
+  const windSpeedKm = weatherData.wind.speed * 1.609;
 
   CurrentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
 
@@ -72,15 +48,13 @@ function displayResults(weatherData) {
 
   WindSpeedKm.innerHTML = `${windSpeedKm.toFixed(2)}`;
 
-  //Calculate windchill
-  let windChill = 35.74 + 0.6215 * weatherData.main.temp - 35.75 * Math.pow(windSpeedKm, 0.16) + 0.4275 * weatherData.main.temp * Math.pow(windSpeedKm, 0.16);
-
-  if ( weatherData.main.speed < 3 && weatherData.main.temp <= 40) {
-    WindChillDisplay.textContent = windChill.toFixed(2) + "°F";
-  } else {
+  if (windSpeedKm < 3 || weatherData.main.temp > 50) {
+   
     WindChillDisplay.textContent = "N/A";
+  } else {
+    let windChill = 35.74 + 0.6215 * weatherData.main.temp - 35.75 * Math.pow(windSpeedKm, 0.16) + 0.4275 * weatherData.main.temp * Math.pow(windSpeedKm, 0.16);
+    WindChillDisplay.textContent = windChill.toFixed(2) + "°F";
   }
 }
 
-
-displayResults();
+}
