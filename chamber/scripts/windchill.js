@@ -48,7 +48,7 @@ function displayResults(weatherData) {
 
   WindSpeedKm.innerHTML = `${windSpeedKm.toFixed(2)}`;
 
-  if (windSpeedKm < 3 || weatherData.main.temp < 30) {
+  if (windSpeedKm < 3 || weatherData.main.temp < 20) {
    
     WindChillDisplay.textContent = "N/A";
   } else {

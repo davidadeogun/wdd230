@@ -483,10 +483,11 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="tel"],
+
 textarea {
     border: 1px solid #ccc;
     border-radius: 3px;
-    font-size: 16px;
+    font-size: 12px;
     padding: 8px;
     width: 100%;
 }
@@ -653,4 +654,58 @@ input[type="submit"]:hover {
     font-size: 0.8rem;
     margin: 10px;
     font-family: "Poppins";
+}
+
+
+
+.main-contact-div{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-contact-div a {
+    text-decoration: none;
+    color: #0000EE;
+    font-family: 'Poppins';
+    font-size: .9rem;
+}
+.main-contact-div a:hover {
+    color: #5e6472;
+}
+.contact-form {
+    bottom: 10%;
+    width: 100%;
+    padding: 30px 10px 20px 10px;
+    background-color: #f2f2f2;
+  
+}
+
+
+input[type = "text"] hover {
+color: #cd7f32;
+}
+.contact-form-div {
+    width: 100%;
+    margin-top: 30px;
+}
+label {
+    margin: 20px 12px 5px 0;
+    display: block;
+    font-size: 0.7rem;
+    width: 100%;
+
+  }
+ 
+
+.contact-headings {
+    
+    font-weight: bold;
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+}
+
+.main-contact-div p {
+    font-family: 'Poppins';
+    font-size: .9rem;
 }

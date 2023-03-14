@@ -321,12 +321,13 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 3px;
     font-size: 16px;
-    padding: 12px;
+    padding: 20px;
     width: 100%;
 }
 
 input[type="submit"] {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+    margin-top: 15px;
 }
     .benefits-btn {
         padding: 10px 50px 10px 50px;
@@ -358,5 +359,35 @@ input[type="submit"] {
         0 10px 0 #001900, 
         0 12px 0 #000d00;
       }
+      .contact-headings {
+    
+        font-weight: bold;
+        font-family: 'Poppins';
+        font-size: 1.6rem;
+    }
+    
+    .main-contact-div p {
+        font-family: 'Poppins';
+        font-size: 1.4rem;
+    }
+
+    .main-contact-div a {
+        text-decoration: none;
+        color: #0000EE;
+        font-family: 'Poppins';
+        font-size: 1.3rem;
+    }
+    .main-contact-div a:hover {
+        color: #5e6472;
+    }
+
+    .contact-form {
+        bottom: 1%;
+        width: 100%;
+        padding: 30px 20px 70px 20px;
+        background-color: #f2f2f2;
+     
+      
+    }
 
 }
