@@ -193,32 +193,56 @@ body {
         margin: 5px 500px 0px 500px;
     }
 
-    form {
+   /* form {
         
         position: relative;
         min-width: 640px;
         top: 0%;
         left: -55%;
-        margin-top: 0px;
+        margin-top: 0px;F
         margin-bottom: -800px;
         padding: 90px;
         transform: translate(-90%, -107%);
         float: left;
-    }
-    .memberBenefits {
+    } */
+    /*.memberBenefits {
         width: 30%;
         float: right;
         transform: translate(-25%, 5%);
         position: relative;
-    }
-        
+    }*/
+    .join-form-and-otherinfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      
+   .join-form {
+    grid-column: 1;
+    margin: -1000px 0px 0px -1500px;
+   }
    
+    form {
+        padding: 40px 50px 30px 50px;
+        grid-column: 1;
+        margin-top: 310px;
+    }
+   
+   .memberBenefits {
+    grid-column: 2/3;
+    
+   
+   }
+  .benefits-free, .benefits-bronze, .benefits-silver, .benefits-gold {
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+  }
     
     .fill-form {
         text-align: center;
         font-family: "Poppins";
         margin-top: 50px;
-        font-size: 1.2rem;
+        font-size: 0.1rem;
         display: none;
     }
 
@@ -229,11 +253,11 @@ body {
     }
     
 
-    #join-main {
+   /* #join-main {
         display: flex;
         flex-direction: column;
       
-    }
+    }*/
     .benefits-btn {
         display: none;
     }
@@ -265,4 +289,18 @@ body {
     0 10px 0 #001900, 
     0 12px 0 #000d00;
   }
+
+  
+  /*Contact form declaration*/
+  .main-contact-div {
+    display:grid;
+    width: 100%;
+    margin: 60px;
+    
+  }
+  .contact-form-div {
+    margin-top: 250px;
+    margin-left: 350px;
+  }
+  
 }
