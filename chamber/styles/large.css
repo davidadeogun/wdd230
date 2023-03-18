@@ -268,13 +268,20 @@ body {
 
   #directory .company-list{
    display:grid;
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr;
    
   }
   #directory {
-    width: 350%;
-    margin: 100px;
+    width: 100%;
+    margin: 120px 0px 100px 0px;
   }
+
+   #directory button {
+left: 150%;
+top: -5%;
+position: relative;
+}
+
   
   .company-list li:hover {
     transform: scale(1.1);
@@ -292,15 +299,7 @@ body {
 
   
   /*Contact form declaration*/
-  .main-contact-div {
-    display:grid;
-    width: 100%;
-    margin: 60px;
-    
-  }
-  .contact-form-div {
-    margin-top: 250px;
-    margin-left: 350px;
-  }
-  
+ 
+
+ 
 }

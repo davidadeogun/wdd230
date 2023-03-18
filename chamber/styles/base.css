@@ -400,7 +400,7 @@ footer hr {
 
 h2 {
     font-family: 'Miltonian Tattoo', 'Poppins';
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #0000ee;
     text-align: center;
 }
@@ -618,6 +618,15 @@ input[type="submit"]:hover {
     font-family: "Arial";
 }
 
+/*from here */
+
+#display-options {
+    text-align: center;
+   
+   
+}
+  /*to here*/
+
 
 
 .company-list li {
@@ -632,7 +641,7 @@ input[type="submit"]:hover {
     0 8px 0 #002600, 
     0 10px 0 #001900, 
     0 12px 0 #000d00;
-    
+   
 }
 
 

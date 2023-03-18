@@ -196,9 +196,10 @@
 
     h2 {
         font-family: 'Miltonian Tattoo', 'Poppins';
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: #0000ee;
         text-align: center;
+        margin: 30px 30px 0px 0px;
     }
 
     .discover-div img:hover {
@@ -341,15 +342,17 @@ input[type="submit"] {
     .company-list {
         display: grid;
         grid-template-columns: 1fr 1fr;
-       
         padding: 0px;
         margin: 0px;
     }
-
+#directory {
+    margin: 40px 40px 20px 40px;
+}
     .company-list li:hover {
         transform: scale(1.1);
       }
       .company-list li{
+        
         transition: transform 0.2s ease-in-out;
         box-shadow: 0 2px 0 #006600, 
         0 3px 0 #005900, 
@@ -390,4 +393,6 @@ input[type="submit"] {
       
     }
 
+    
+    
 }
