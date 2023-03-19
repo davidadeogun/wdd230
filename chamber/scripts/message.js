@@ -51,7 +51,7 @@ fetch('data.json')
         BrandLogo3.setAttribute('src', image3);
 
     })
-    .catch(error => console.error(error));
+    .catch(error => console.error());
 
 
 
