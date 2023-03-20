@@ -718,3 +718,14 @@ label {
     font-family: 'Poppins';
     font-size: .9rem;
 }
+
+
+.footer_info a {
+    text-decoration: none;
+    color: #fff;
+    font-size: .8rem;
+}
+
+.footer_info a:hover {
+    color: #0000EE;
+}
