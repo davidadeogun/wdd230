@@ -13,45 +13,47 @@ let Message = function () {
 
 Message();
 
-
 //Index script for the spotlight
+function filterMembership(data) {
+    return data.filter(item => item.membershiplevel === 'Silver' || item.membershiplevel === 'Gold');
+}
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
 fetch('data.json')
     .then(response => response.json())
     .then(data => {
-        const spotlight1 = document.querySelector('.spotlight1');
-        spotlight1.querySelector('h3').textContent = data[1].company;
-        spotlight1.querySelector('p').textContent = data[1].slogan;
-        spotlight1.querySelector('a').textContent = data[1].websiteurl;
-        spotlight1.querySelector('.phone-number').textContent = data[1].phone;
+        const filteredData = filterMembership(data);
+        shuffleArray(filteredData);
 
-        let image1 = data[1].logo;
-        let BrandLogo1 = spotlight1.querySelector('img');
-        BrandLogo1.setAttribute('src', image1);
+        const spotlights = ['spotlight1', 'spotlight2', 'spotlight3'];
 
+        for (let i = 0; i < spotlights.length; i++) {
+            const spotlight = document.querySelector(`.${spotlights[i]}`);
 
-        const spotlight2 = document.querySelector('.spotlight2');
-        spotlight2.querySelector('h3').textContent = data[5].company;
-        spotlight2.querySelector('p').textContent = data[5].slogan;
-        spotlight2.querySelector('a').textContent = data[5].websiteurl;
-        spotlight2.querySelector('.phone-number').textContent = data[5].phone;
+            // Check if the spotlight element exists
+            if (spotlight) {
+                const item = filteredData[i];
 
-        let image2 = data[5].logo;
-        let BrandLogo2 = spotlight2.querySelector('img');
-        BrandLogo2.setAttribute('src', image2);
+                spotlight.querySelector('h3').textContent = item.company;
+                spotlight.querySelector('p').textContent = item.slogan;
+                spotlight.querySelector('a').textContent = item.websiteurl;
+                spotlight.querySelector('.phone-number').textContent = item.phone;
 
-
-        const spotlight3 = document.querySelector('.spotlight3');
-        spotlight3.querySelector('h3').textContent = data[7].company;
-        spotlight3.querySelector('p').textContent = data[7].slogan;
-        spotlight3.querySelector('a').textContent = data[7].websiteurl;
-        spotlight3.querySelector('.phone-number').textContent = data[7].phone;
-
-        let image3 = data[7].logo;
-        let BrandLogo3 = spotlight3.querySelector('img');
-        BrandLogo3.setAttribute('src', image3);
-
+                let BrandLogo = spotlight.querySelector('img');
+                BrandLogo.setAttribute('src', item.logo);
+            }
+        }
     })
-    .catch(error => console.error());
+    .catch(error => console.error(error));
+
+
+
 
 
 

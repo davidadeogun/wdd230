@@ -1,0 +1,164 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #006100;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: .8rem 2vw;
+}
+
+nav ul li a:hover {
+    color: #FFF5DB;
+    background-color: #C1121F;
+}
+
+.logo-div {
+    /*brand-logo in header*/
+    margin-top: -20px;
+
+}
+.logo-div img{
+    width: 200px;
+    
+}
+
+.logoandnav {
+    /*logo and nav in header*/
+    display: flex;
+}
+
+.nav-div {
+    /*navigation in header*/
+    margin-top: 30px;
+    margin-left: 65px;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    margin: .1rem 2vw;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+nav ul.open {
+    display: block;
+}
+
+#hamburgerButton {
+    margin-top: 5px;
+}
+
+#hamburgerButton span:nth-child(1) {
+    display: block;
+}
+
+#hamburgerButton span:nth-child(2) {
+    display: none;
+}
+
+#hamburgerButton.open span:nth-child(1) {
+    display: none;
+}
+
+#hamburgerButton.open span:nth-child(2) {
+    display: block;
+}
+
+/*Main*/
+
+
+
+
+/*footer*/
+
+footer {
+    background-color: #006100;
+    text-align: center;
+    color: #fff;
+   
+
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.social-media a {
+    color: #fff;
+}
+
+
+
+.footer-navigation ul li {
+    list-style-type: none;
+    font-size: 1.1rem;
+    justify-content: space-between;
+    color: #fff;
+    margin: 40px 60px 40px 40px;
+}
+
+.footer-navigation ul li a {
+    text-decoration: none;
+    color: #fff;
+
+}
+.footer-navigation ul li a:hover{
+    color: #fff;
+    background-color: #C1121F;
+    padding: 10px;
+}
+
+.footer-address a {
+    text-decoration: none;
+    color: #fff;
+}
+.footer-address {
+    margin: 0px 0px 30px 0px;
+}
+
+.footer-googlemap img{
+    width: 70%;
+}
+
+.footer-logo img {
+    width: 300px;
+}
+

@@ -40,7 +40,7 @@
             "websiteurl": "www.www.zoomdrain.com",
             "logo": "images/resized/zoomdrain.jpg",
             "order": 4,
-            "membershiplevel": "Basic",
+            "membershiplevel": "Silver",
             "slogan": "Draining since 1952!"
 
         },
@@ -52,7 +52,7 @@
             "websiteurl": "www.youngbloodboutique.com",
             "logo": "images/resized/young_blood.jpg",
             "order": 5,
-            "membershiplevel": "Bronze",
+            "membershiplevel": "Gold",
             "slogan": "We are young at heart!"
 
         },
@@ -110,7 +110,7 @@
             "phone": "(678) 336-1195",
             "websiteurl": "www.peachtreepetals.com",
             "logo": "images/resized/peachtreepetals.jpg",
-            "order": 8,
+            "order": 10,
             "membershiplevel": "Basic",
             "slogan": "Smells fresh forever!"
 
@@ -121,7 +121,7 @@
             "phone": "(678) 336-1195",
             "websiteurl": "www.peachtreepetals.com",
             "logo": "images/resized/peachtreepetals.jpg",
-            "order": 8,
+            "order": 11,
             "membershiplevel": "Basic",
             "slogan": "Smells fresh forever!"
 
@@ -132,9 +132,53 @@
             "phone": "(678) 336-1195",
             "websiteurl": "www.peachtreepetals.com",
             "logo": "images/resized/peachtreepetals.jpg",
-            "order": 8,
+            "order": 12,
             "membershiplevel": "Basic",
             "slogan": "Smells fresh forever!"
+
+        },
+        {
+            "company" : "Cycle Techniques",
+            "address" : "6014 Sandy Springs Cir Ste B Atlanta, GA 30328",
+            "phone": "(404) 432-5841",
+            "websiteurl": "www.cycletechnique.com",
+            "logo": "images/resized/cycletech.jpg",
+            "order": 13,
+            "membershiplevel": "Silver",
+            "slogan": "We'll get you there!"
+
+        },
+        {
+            "company" : "The Cook's Warehouse",
+            "address" : "1544 Piedmont Ave NE Ste 403-R Atlanta, GA 30324",
+            "phone": "(404) 815-4993",
+            "websiteurl": "www.cookswarehouse.com",
+            "logo": "images/resized/cookware.jpg",
+            "order": 14,
+            "membershiplevel": "Gold",
+            "slogan": "Smells fresh forever!"
+
+        },
+        {
+            "company" : "Savannah Bee",
+            "address" : "1100 Howell Mill Rd NW Ste A01 Atlanta, GA 30318",
+            "phone": "(404) 343-1568",
+            "websiteurl": "www.savannahbee.com",
+            "logo": "images/resized/savannah.jpg",
+            "order": 15,
+            "membershiplevel": "Silver",
+            "slogan": "Count on us to take care of you!"
+
+        },
+        {
+            "company" : "YOUNG BLOOD",
+            "address" : "777 Memorial Dr SE Ste A104A Atlanta, GA 30316",
+            "phone": "(404) 358-1286",
+            "websiteurl": "www.youngbloodboutique.com",
+            "logo": "images/resized/young_blood.jpg",
+            "order": 16,
+            "membershiplevel": "Gold",
+            "slogan": "We are young at heart!"
 
         }
 

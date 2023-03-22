@@ -1,0 +1,39 @@
+@media only screen and (min-width: 35rem) 
+{
+    body{
+        font-size: 1.2rem;
+    }
+    header{
+        font-size: 1.3rem;
+    }
+
+   
+   
+    .nav-div {
+        /*navigation in header*/
+        margin-top: 50px;
+        margin-left: 400px;
+    }
+
+    #primary-navigation li a{
+        font-size: 1.5rem;
+    }
+    #hamburgerButton {
+        font-size: 40px;
+    }
+
+
+/*Main CSS Declarations*/
+
+    /*Footer CSS Declarations*/
+    footer, .footer-navigation ul li {
+        font-size: 1.5rem;
+    }
+    .footer-googlemap img{
+        width: 50%;
+    }
+    .footer-logo img {
+width: 500px;
+margin: 0;
+    }
+}

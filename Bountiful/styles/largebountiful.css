@@ -1,0 +1,68 @@
+@media only screen and (min-width: 60rem) 
+{
+
+body{
+    font-size: 1.2rem;
+}
+header{
+    font-size: 1.5rem;
+}
+/*header*/
+nav button {
+    display: none;
+    /*Removes the hamburger button from a large view*/
+
+}
+
+nav ul#primary-navigation {
+    display: flex;
+    justify-content: space-evenly;
+    /*Centers the nav with space-between, evenly or around*/
+    margin: 30px 7px 0px 900px;
+    
+}
+
+  .nav-div {
+        /*navigation in header*/
+        margin-top: 25px;
+        margin-left: 0px;
+    }
+
+
+
+
+
+
+    /*Footer*/
+    .footer-all {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .footer-googlemap img{
+        width: 75%;
+        margin-top: 100px;
+    }
+    .footer-logo img {
+        width: 400px;
+        margin-top: -70px;
+        margin-bottom: 0px;
+    }
+    .footer-navigation ul li {
+        font-size: 1.5rem;
+        margin-top: 90px
+        
+    }
+    .social-media {
+        display: flex;
+       flex-direction: row;
+       grid-column: 3;
+       justify-content: center;
+       margin-top: -70px;
+       
+    }
+
+
+    .copyright{
+        grid-column: 2;
+    }
+}
