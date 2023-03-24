@@ -28,12 +28,61 @@ nav ul#primary-navigation {
         margin-left: 0px;
     }
 
+/*MAIN CSS*/
+.gallery {
+    margin: 70px;
+}
+.specialty-drinks-and-fruits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+    
+}
+.order {
+    background-color: #006100;
+    width: 70%;
+    padding: 20px;
+    border: 1px solid #006100;
+    margin: 20px 0px 20px 300px;
+}
+.order button {
+    background-color: #C1121F;
+    color: #fff;
+    padding: 10px 80px 10px 80px;
+    margin: 0px 0px 0px 500px;
+    font-size: 2rem;
+}
+.order-summary {
+    background-color:  #FFF5DB;
+    width: 93%;
+    padding: 75px;
+    margin: 40px 20px 20px 70px;
+    font-size: 1.5rem;
+}
+.weatherandcoastal-info {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem; 
+    margin-bottom: 70px;
+}
+.weather-info{
+    background-color:  #FFF5DB;
+    width: 93%;
+    padding: 75px;
+    margin: 20px 20px 20px 70px;
+}
+
+.coastal-info {
+    background-color:  #FFF5DB;
+    width: 93%;
+    padding: 75px;
+    margin: 20px 60px 20px 20px;
+}
+/*END OF MAIN CSS*/
 
 
 
-
-
-    /*Footer*/
+    /*FOOTER CSS*/
     .footer-all {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

@@ -100,12 +100,76 @@ nav ul.open {
     display: block;
 }
 
-/*Main*/
+/*MAIN CSS*/
+.main-video video{  /*This controls the video src in all the viewports*/
+    width: 100%
+}
+
+.gallery {
+    background-color: #FFF5DB;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+   
+}
+.gallery img {
+    width: 100%;   
+}
+
+.specialty-drinks-and-fruits{
+    margin:25px 40px 25px 20px;
+}
+
+.specialty-drinks-and-fruits img {
+    margin: 10px;
+}
+
+.order {
+    background-color: #006100;
+    width: 80%;
+    padding: 20px;
+    border: 1px solid #006100;
+    margin: 20px 0px 20px 35px;
+    
+}
+.order button {
+    background-color: #C1121F;
+    color: #fff;
+    padding: 5px 40px 5px 40px;
+    margin: 0px 0px 0px 50px;
+}
+
+.order-summary {
+    background-color:  #FFF5DB;
+    width: 85%;
+    padding: 75px;
+    margin: 20px 20px 20px 25px;
+}
+
+.weatherandcoastal-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-info{
+    background-color:  #FFF5DB;
+    width: 85%;
+    padding: 75px;
+    margin: 20px 20px 20px 25px;
+}
+
+.coastal-info {
+    background-color:  #FFF5DB;
+    width: 85%;
+    padding: 75px;
+    margin: 20px 20px 20px 25px;
+}
+
+/*END OF MAIN CSS*/
 
 
 
-
-/*footer*/
+/*FOOTER CSS*/
 
 footer {
     background-color: #006100;
