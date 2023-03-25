@@ -1,6 +1,7 @@
 @media only screen and (min-width: 35rem) {
     body {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+        font-family: 'Poppins', sans-serif;
     }
 
     header {
@@ -27,51 +28,94 @@
 
     /*MAIN CSS Declarations*/
     .specialty-drinks-and-fruits {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-}
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
 
-.order {
-    background-color: #006100;
-    width: 90%;
-    padding: 20px;
-    border: 1px solid #006100;
-    margin: 20px 0px 20px 40px;
-}
-.order button {
-    background-color: #C1121F;
-    color: #fff;
-    padding: 20px 80px 20px 80px;
-    margin: 0px 0px 0px 220px;
-    font-size: 1.5rem;
-}
-.order-summary {
-    background-color:  #FFF5DB;
-    width: 94%;
-    padding: 75px;
-    margin: 40px 20px 20px 25px;
-    font-size: 1.5rem;
-}
-.weatherandcoastal-info {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.5rem; 
-}
-.weather-info{
-    background-color:  #FFF5DB;
-    width: 94%;
-    padding: 75px;
-    margin: 20px 20px 20px 25px;
-}
+    .order {
+        background-color: #006100;
+        width: 90%;
+        padding: 20px;
+        border: 1px solid #006100;
+        margin: 20px 0px 20px 40px;
+    }
 
-.coastal-info {
-    background-color:  #FFF5DB;
-    width: 94%;
-    padding: 75px;
-    margin: 20px 20px 40px 25px;
-}
+    .order button {
+        background-color: #C1121F;
+        color: #fff;
+        padding: 20px 80px 20px 80px;
+        margin: 0px 0px 0px 220px;
+        font-size: 1.5rem;
+    }
 
+    .order-summary {
+        background-color: #FFF5DB;
+        width: 94%;
+        padding: 75px;
+        margin: 40px 20px 20px 25px;
+        font-size: 1.5rem;
+    }
+
+    .weatherandcoastal-info {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+    }
+
+    .weather-info {
+        background-color: #FFF5DB;
+        width: 94%;
+        padding: 75px;
+        margin: 20px 20px 20px 25px;
+    }
+
+    .coastal-info {
+        background-color: #FFF5DB;
+        width: 94%;
+        padding: 75px;
+        margin: 20px 20px 40px 25px;
+    }
+
+    /*start of About Us page*/
+    .about_allcontent {
+        margin: 30px;
+    }
+    .first_founder {
+        width: 80%;
+        margin: 10px 0px 0px 70px;
+    }
+
+    .first_founder img {
+        width: 100%;
+    }
+
+    .second_founder {
+        width: 80%;
+        margin: 10px 0px 0px 70px;
+    }
+
+    .second_founder img {
+        width: 100%;
+    }
+    .about_contactinfo_googlemap {
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+    
+    }
+    .about_contactinfo a {
+        text-decoration: none;
+    }
+    .about_contactinfo a:hover {
+        color: #006100;
+    }
+    .about_googlemap img {
+        width: 70%;
+        margin: 20px 0px 50px 100px;
+    }
+
+    /*End of About Us page*/
 
 
 

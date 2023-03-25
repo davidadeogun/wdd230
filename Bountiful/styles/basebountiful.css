@@ -14,9 +14,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-
     font-family: 'Poppins', sans-serif;
-    font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -165,6 +163,49 @@ nav ul.open {
     margin: 20px 20px 20px 25px;
 }
 
+/*Start of About Page*/
+.about_allcontent {
+    margin: 10px;
+}
+.historical_info {
+    margin: 30px;
+    text-align: center;
+}
+.first_second_founder {
+   display: flex;
+   flex-direction: column;
+   margin: 30px;
+   text-align: center;
+}
+.first_founder img {
+    width: 100%;
+}
+.first_founder p {
+    text-align: center;
+}
+.second_founder img {
+    width: 100%;
+}
+.second_founder p{
+    text-align: center;
+}
+.about_contactinfo_googlemap {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+
+}
+.about_contactinfo a {
+    text-decoration: none;
+}
+.about_contactinfo a:hover {
+    color: #006100;
+}
+.about_googlemap img {
+    width: 100%;
+    margin-top: 20px;
+}
+/*End of About Page*/
 /*END OF MAIN CSS*/
 
 
