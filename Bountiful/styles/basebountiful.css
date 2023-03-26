@@ -227,56 +227,60 @@ nav ul.open {
     text-align: center;
     margin: 20px;
 }
-.form-only {
-    background-color: #FFF5DB;
-    margin: 10px 10px 50px 10px;
-    padding: 30px;
-    border: 1px solid #FFF5DB;
-    font-size: .8rem;
-    font-weight: bold;
-    
-}
-label{
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  /* Style the container */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
     float: left;
-    margin-left: -20px;
-}
-
-.firstnamelabel, 
-.lastnamelabel,
-.emaillabel,
-.phonelabel  {
-    display: flex;
-}
-
-
-input[type="text"]
-{
-    margin-left: 10px;
-}
-
-
-input[type="email"]
-{
-width: 80%;
-margin-left: 42px;
-margin-top: -100px;
-}
-input[type="tel"] {
-    width: 85%;
-    margin-left: 34px;
-    margin-top: -100px;  
-}
-
-textarea {
-    width: 70%;
-    margin-left: 40px;
-    padding: 30px;
-    
-}
-#fruit1, #fruit2, #fruit3 {
-    width:67%;
-    margin-left: 10px;
-}
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 /*End of Fresh page*/
 

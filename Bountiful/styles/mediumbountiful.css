@@ -114,7 +114,9 @@
         width: 70%;
         margin: 20px 0px 50px 100px;
     }
-
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;}
     /*End of About Us page*/
 
 

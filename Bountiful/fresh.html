@@ -49,68 +49,49 @@
         <div class="headingandform"> <!--start div that encloses the heading and form-->
             <h3>Build Your Specialty Drink</h3>
 
-            <div class="form-only"> <!--start div that encloses the form-->
-                <form id="drink-form">
-                    <div class="firstnamelabel">
-                        <label for="first-name">First Name:</label>
-                        <div>
-                            <input type="text" id="first-name" name="first-name" required>
-                        </div>
+            <div class="container">
+                <form action="action_page.php">
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="fname">First Name</label>
                     </div>
-                    <br>
-                    <div class="lastnamelabel">
-                        <label for="last-name">Last Name:</label>
-                        <div>
-                            <input type="text" id="last-name" name="last-name" required>
-                        </div>
+                    <div class="col-75">
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
                     </div>
-                    <br>
-                    <div class="emaillabel">
-                        <label for="email">Email:</label>
-                        <div>
-                            <input type="email" id="email" name="email" required>
-                        </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="lname">Last Name</label>
                     </div>
-                    <br>
-                    <div class="phonelabel">
-                        <label for="phone-number">Phone:</label>
-                        <div>
-                            <input type="tel" id="phone-number" name="phone-number" required>
-                        </div>
+                    <div class="col-75">
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
                     </div>
-                    <br>
-                    <div>
-                        <label for="fruit1">Fruit 1:</label>
-                        <div>
-                            <select id="fruit1" name="fruit1" required></select>
-                        </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="country">Country</label>
                     </div>
-                    <br>
-                    <div>
-                        <label for="fruit2">Fruit 2:</label>
-                        <div>
-                            <select id="fruit2" name="fruit2" required></select>
-                        </div>
+                    <div class="col-75">
+                      <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                      </select>
                     </div>
-                    <br>
-                    <div>
-                        <label for="fruit3">Fruit 3:</label>
-                        <div>
-                            <select id="fruit3" name="fruit3" required></select>
-                        </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="subject">Subject</label>
                     </div>
-                    <br>
-
-                    <div>
-                        <label for="special-instructions">Special Instructions:</label>
-                        <div>
-                            <textarea id="special-instructions" name="special-instructions"></textarea>
-                        </div>
+                    <div class="col-75">
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
                     </div>
-                    <br>
-                    <button type="submit">Submit</button>
+                  </div>
+                  <div class="row">
+                    <input type="submit" value="Submit">
+                  </div>
                 </form>
-            </div> <!--End div that encloses the form-->
+              </div>
 
         </div> <!--End div that encloses the heading and form-->
     </main> <!--Start - Main-->
