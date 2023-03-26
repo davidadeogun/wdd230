@@ -31,9 +31,10 @@
                 <nav>
                     <button id="hamburgerButton"><span>&#9776;</span><span>X</span></button>
                     <ul id="primary-navigation">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="fresh.html">Fresh</a></li>
+                        <li><a href="#">Fresh</a></li>
+                
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
@@ -45,108 +46,73 @@
     </header> <!--End - Header-->
 
     <main> <!--Start - Main-->
-        <div> <!--Start div that encloses all divs in the main-->
-            <div class="main-video"> <!--Start Main div that encloses........-->
+        <div class="headingandform"> <!--start div that encloses the heading and form-->
+            <h3>Build Your Specialty Drink</h3>
 
-                <video src="images/Bountiful_video_compressed.mp4" autoplay muted></video>
-            </div> <!--End Main div that encloses........-->
-
-
-            <div class="gallery"> <!--Start div for Gallery-->
-                <div class="specialty-drinks-and-fruits"> <!--start div that encloses all specialty drinks-->
-                    <div>
-                        <a href="#"> <img src="images/1stspecialty.jpeg" alt=""></a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="images/2ndSpecialty.jpeg" alt=""></a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="images/3rdspecialty.jpeg" alt=""></a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="images/4thspecialty.jpeg" alt=""></a>
-                    </div>
-
-                    <div>
-                        <a href="#"><img src="images/apples.jpeg" alt="apples"></a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="images/oranges.jpeg" alt="oranges"></a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="images/pineapple.jpeg" alt="pineapple"></a>
-                    </div>
-                    <div>
-                        <a href="#"><img src="images/strawberry.jpeg" alt="strawberry"></a>
-                    </div>
-                </div> <!--End div for speciality drinks and fruits-->
-            </div> <!--End div for Gallery-->
-
-
-            <div class="order"> <!--Start div that encloses the ORDER button-->
-                <button>Order</button>
-            </div> <!--End div that encloses the ORDER button-->
-
-            <div class="order-summary"> <!--Start div that encloses the information card about total number of drinks-->
-                <p>Order Summary</p>
-            </div> <!--End div that encloses the information card about total number of drinks-->
-
-            <div class="weatherandcoastal-info">
-                <!-- Parent Start div that encloses the weather cards and info about coastal areas-->
-
-
-                <div class="weather-info"> <!--Child start div weather card-->
-                    <h3>Weather</h3>
-                    <div class="tempandweathericon-info">
-                        <img src="" id="weathericon" alt="weather icon">
-                        <h3><span id="temp"></span>&deg;F</h3>
-                    </div>
-                    <p id="weather-description"></p>
-                    <hr>
-                    <div>
-                        <p>Humidity: </p>
-                        <p><span id="humidity-value"></span>g/m^3</p>
-                    </div>
-                    <h3>3-day forecast</h3>
-                    <div class="threedayforecast"> <!--Start div 3 day forecast-->
-                        <div class="allfirstdayweather">
-                            <p id="firstday"></p>
-                            <p id="firstdaydate"></p>
-                            <img src="" id="firstdayweathericon" alt="weather icon">
-                            <p id="firstdaytemp"></p>
+            <div class="form-only"> <!--start div that encloses the form-->
+                <form id="drink-form">
+                    <div class="firstnamelabel">
+                        <label for="first-name">First Name:</label>
+                        <div>
+                            <input type="text" id="first-name" name="first-name" required>
                         </div>
-
-                        <div class="allseconddayweather">
-                            <p id="secondday"></p>
-                            <p id="seconddaydate"></p>
-                            <img src="" id="seconddayweathericon" alt="weather icon">
-                            <p id="seconddaytemp"></p>
+                    </div>
+                    <br>
+                    <div class="lastnamelabel">
+                        <label for="last-name">Last Name:</label>
+                        <div>
+                            <input type="text" id="last-name" name="last-name" required>
                         </div>
-
-                        <div class="allthirddayweather">
-                            <p id="thirdday"></p>
-                            <p id="thirddaydate"></p>
-                            <img src="" id="thirddayweathericon" alt="weather icon">
-                            <p id="thirddaytemp"></p>
+                    </div>
+                    <br>
+                    <div class="emaillabel">
+                        <label for="email">Email:</label>
+                        <div>
+                            <input type="email" id="email" name="email" required>
                         </div>
-                    </div> <!--End div 3 day forecast-->
+                    </div>
+                    <br>
+                    <div class="phonelabel">
+                        <label for="phone-number">Phone:</label>
+                        <div>
+                            <input type="tel" id="phone-number" name="phone-number" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="fruit1">Fruit 1:</label>
+                        <div>
+                            <select id="fruit1" name="fruit1" required></select>
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="fruit2">Fruit 2:</label>
+                        <div>
+                            <select id="fruit2" name="fruit2" required></select>
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="fruit3">Fruit 3:</label>
+                        <div>
+                            <select id="fruit3" name="fruit3" required></select>
+                        </div>
+                    </div>
+                    <br>
 
-                </div> <!--child end div weather card-->
+                    <div>
+                        <label for="special-instructions">Special Instructions:</label>
+                        <div>
+                            <textarea id="special-instructions" name="special-instructions"></textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div> <!--End div that encloses the form-->
 
-                <div class="coastal-info"> <!--Child Start div coastal info-->
-                    <p>Coastal Land Info Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ullam similique temporibus dignissimos magni quas adipisci ipsa ipsam tempora qui blanditiis.
-                    </p>
-                </div> <!--child End div coastal info-->
-            </div> <!-- Parent End div that encloses the weather cards and info about coastal areas-->
-
-
-
-
-
-
-
-        </div> <!--End div that encloses all divs in the main-->
+        </div> <!--End div that encloses the heading and form-->
     </main> <!--Start - Main-->
 
 
@@ -197,6 +163,7 @@
         </div> <!--End div that encloses the brand logo, contact info, newsletter, social media icons-->
     </footer> <!--Start - Footer-->
     <script src="script/bountiful.js"></script>
+    <script src="script/fruitmix.js"></script>
 </body>
 
 </html>
