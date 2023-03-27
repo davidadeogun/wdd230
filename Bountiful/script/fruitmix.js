@@ -23,11 +23,11 @@ function populateSelect(select, fruits) {
   Order Date: ${orderDate}
   
   Total Nutrients:
-  Carbohydrates: ${(order.fruit1.carbs + order.fruit2.carbs + order.fruit3.carbs).toFixed(2)} g
-  Protein: ${(order.fruit1.protein + order.fruit2.protein + order.fruit3.protein).toFixed(2)} g
-  Fat: ${(order.fruit1.fat + order.fruit2.fat + order.fruit3.fat).toFixed(2)} g
-  Sugar: ${(order.fruit1.sugar + order.fruit2.sugar + order.fruit3.sugar).toFixed(2)} g
-  Calories: ${(order.fruit1.calories + order.fruit2.calories + order.fruit3.calories).toFixed(2)} kcal
+  Carbohydrates: ${(order.fruit1.nutritions.carbohydrates + order.fruit2.nutritions.carbohydrates + order.fruit3.nutritions.carbohydrates).toFixed(2)} g
+  Protein: ${(order.fruit1.nutritions.protein + order.fruit2.nutritions.protein + order.fruit3.nutritions.protein).toFixed(2)} g
+  Fat: ${(order.fruit1.nutritions.fat + order.fruit2.nutritions.fat + order.fruit3.nutritions.fat).toFixed(2)} g
+  Sugar: ${(order.fruit1.nutritions.sugar + order.fruit2.nutritions.sugar + order.fruit3.nutritions.sugar).toFixed(2)} g
+  Calories: ${(order.fruit1.nutritions.calories + order.fruit2.nutritions.calories + order.fruit3.nutritions.calories).toFixed(2)} kcal
     `;
   
     outputElement.textContent = output;
