@@ -35,7 +35,7 @@
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="#">Fresh</a></li>
                 
-                        <li><a href="contact.html">Contact</a></li>
+                   
                     </ul>
                 </nav>
             </div><!--End div that encloses the nav only-->
@@ -50,47 +50,82 @@
             <h3>Build Your Specialty Drink</h3>
 
             <div class="container">
-                <form action="action_page.php">
+                <form id="order-form">
                   <div class="row">
                     <div class="col-25">
                       <label for="fname">First Name</label>
                     </div>
                     <div class="col-75">
-                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                      <input type="text" id="first-name" name="firstname" placeholder="Your name.." required>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-25">
-                      <label for="lname">Last Name</label>
+                      <label for="email">Email</label>
                     </div>
+
                     <div class="col-75">
-                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                      <input type="text" id="email" name="email" placeholder="Email.." required>
                     </div>
                   </div>
+
                   <div class="row">
                     <div class="col-25">
-                      <label for="country">Country</label>
+                      <label for="tel">Phone Number</label>
+                    </div>
+
+                    <div class="col-75">
+                      <input type="text" id="phone" name="telephone" placeholder="Phone Number.." required>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="fruits_options">Fruit Option 1</label>
                     </div>
                     <div class="col-75">
-                      <select id="country" name="country">
-                        <option value="australia">Australia</option>
-                        <option value="canada">Canada</option>
-                        <option value="usa">USA</option>
+                      <select id="fruits1" name="fruits">
+                       
                       </select>
                     </div>
                   </div>
+
                   <div class="row">
                     <div class="col-25">
-                      <label for="subject">Subject</label>
+                      <label for="fruits_options">Fruit Option 2</label>
                     </div>
                     <div class="col-75">
-                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                      <select id="fruits2" name="fruits">
+                        
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="fruits_options">Fruit Option 3</label>
+                    </div>
+                    <div class="col-75">
+                      <select id="fruits3" name="fruits">
+                        <!--<option value="australia">Australia</option>-->
+                        
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="special-instructions">Special Instructions</label>
+                    </div>
+                    <div class="col-75">
+                      <textarea id="special-instructions" name="subject" placeholder="Write something.." style="height:200px"></textarea>
                     </div>
                   </div>
                   <div class="row">
                     <input type="submit" value="Submit">
                   </div>
                 </form>
+                <pre id="output"></pre>
               </div>
 
         </div> <!--End div that encloses the heading and form-->
@@ -114,15 +149,13 @@
 
             </div> <!--End div for brand logo and address-->
 
-            <div class="footer-googlemap"> <!--Start div Map for address-->
-                <img src="images/bountifulfoods-googlemap.png" alt="Location Map">
-            </div> <!--End div Map for address-->
+           
 
             <div class="footer-navigation"> <!--Start div for footer navigation-->
                 <ul>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="fresh.html">Fresh</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+            
                 </ul>
             </div> <!--End div for footer navigation-->
 

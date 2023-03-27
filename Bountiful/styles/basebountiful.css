@@ -241,17 +241,22 @@ input[type=text], select, textarea{
   label {
     padding: 12px 12px 12px 0;
     display: inline-block;
+    
   }
   
   /* Style the submit button */
   input[type=submit] {
-    background-color: #04AA6D;
+    background-color: #006100 ;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     float: right;
+  }
+  input[type=submit]:hover {
+    color: #fff;
+    background-color: #C1121F;
   }
   
   /* Style the container */
@@ -310,9 +315,8 @@ footer {
 
 .social-media a {
     color: #fff;
+
 }
-
-
 
 .footer-navigation ul li {
     list-style-type: none;
@@ -341,9 +345,7 @@ footer {
     margin: 0px 0px 30px 0px;
 }
 
-.footer-googlemap img{
-    width: 70%;
-}
+
 
 .footer-logo img {
     width: 300px;
