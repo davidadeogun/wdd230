@@ -27,6 +27,17 @@
 
 
     /*MAIN CSS Declarations*/
+
+    #header-text {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        color: #fff;
+        font-family: 'Miltonian Tattoo', 'Poppins';
+        font-size: 1.8rem;
+      }
     .specialty-drinks-and-fruits {
         display: grid;
         grid-template-columns: 1fr 1fr;

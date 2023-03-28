@@ -74,3 +74,11 @@ function displayResult(data) {
 }
 
 apiFetch(); // Call the function to fetch and display the weather data
+
+
+
+
+//Animate header text script
+$(document).ready(function() {
+  $('#header-text').fadeIn(5000);
+});
