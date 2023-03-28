@@ -130,11 +130,13 @@ nav ul.open {
     margin: 20px 0px 20px 35px;
     
 }
-.order button {
-    background-color: #C1121F;
+.order a {
+    padding: 7px 20px 7px 20px;
+    text-decoration: none;
+    border: 1px solid #C1121F;
     color: #fff;
-    padding: 5px 40px 5px 40px;
-    margin: 0px 0px 0px 50px;
+    background-color: #C1121F;
+  
 }
 
 .order-summary {

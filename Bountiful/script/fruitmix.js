@@ -33,6 +33,8 @@ function populateSelect(select, fruits) {
     outputElement.textContent = output;
   }
   
+
+
   function processForm(event) {
     event.preventDefault();
   
@@ -59,6 +61,8 @@ specialInstructions,
 };
 
 displayOutput(order);
+
+
 }
 
 let fruits = [];
@@ -73,4 +77,6 @@ populateSelect(document.getElementById("fruits3"), fruits);
 });
 
 document.getElementById("order-form").addEventListener("submit", processForm);
-  
+
+
+
