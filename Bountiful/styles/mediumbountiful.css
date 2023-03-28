@@ -40,13 +40,13 @@
         border: 1px solid #006100;
         margin: 20px 0px 20px 40px;
     }
-
-    .order button {
-        background-color: #C1121F;
+    .order a {
+        padding: 7px 60px 7px 60px;
+        text-decoration: none;
+        border: 1px solid #C1121F;
         color: #fff;
-        padding: 20px 80px 20px 80px;
-        margin: 0px 0px 0px 220px;
-        font-size: 1.5rem;
+        background-color: #C1121F;
+      
     }
 
     .order-summary {
@@ -123,7 +123,7 @@
 /*start of Fresh page*/
 .headingandform {
     text-align: center;
-    margin: 20px;
+    margin: 50px;
 }
 /* Style inputs, select elements and textareas */
 input[type=text], select, textarea{

@@ -128,10 +128,11 @@ nav ul.open {
     padding: 20px;
     border: 1px solid #006100;
     margin: 20px 0px 20px 35px;
+    text-align: center;
     
 }
 .order a {
-    padding: 7px 20px 7px 20px;
+    padding: 5px 20px 5px 20px;
     text-decoration: none;
     border: 1px solid #C1121F;
     color: #fff;

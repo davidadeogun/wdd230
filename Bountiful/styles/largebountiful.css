@@ -45,12 +45,13 @@ nav ul#primary-navigation {
     border: 1px solid #006100;
     margin: 20px 0px 20px 300px;
 }
-.order button {
-    background-color: #C1121F;
+.order a {
+    padding: 7px 80px 7px 80px;
+    text-decoration: none;
+    border: 1px solid #C1121F;
     color: #fff;
-    padding: 10px 80px 10px 80px;
-    margin: 0px 0px 0px 500px;
-    font-size: 2rem;
+    background-color: #C1121F;
+  
 }
 .order-summary {
     background-color:  #FFF5DB;

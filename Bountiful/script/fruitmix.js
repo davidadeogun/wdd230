@@ -34,6 +34,24 @@ function populateSelect(select, fruits) {
   }
   
 
+  function updateSubmittedDrinksCount() {
+    let count = localStorage.getItem("submittedDrinksCount");
+    count = count ? parseInt(count) : 1;
+    count += 1;
+    localStorage.setItem("submittedDrinksCount", count);
+  }
+  
+  function displaySubmittedDrinksCount() {
+    const count = localStorage.getItem("submittedDrinksCount") || 0;
+    const infoCard = document.getElementById("info-card");
+    if (infoCard) {
+      infoCard.textContent = `Total Submitted Specialty Drinks: ${count}`;
+    }
+  }
+  
+
+
+
 
   function processForm(event) {
     event.preventDefault();
@@ -62,7 +80,7 @@ specialInstructions,
 
 displayOutput(order);
 
-
+displaySubmittedDrinksCount();
 }
 
 let fruits = [];
