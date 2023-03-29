@@ -21,6 +21,9 @@ nav ul#primary-navigation {
     margin: 30px 7px 0px 900px;
     
 }
+#primary-navigation li a {
+    font-size: 1.5rem;
+}
 
   .nav-div {
         /*navigation in header*/
