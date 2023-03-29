@@ -99,12 +99,12 @@ nav ul.open {
 }
 
 /*MAIN CSS*/
-.main-video video{  /*This controls the video src in all the viewports*/
+.main-hero img{  /*This controls the video src in all the viewports*/
     width: 100%
     
 }
 
-.main-video {
+.main-hero {
     position: relative;
     
 }
@@ -114,7 +114,7 @@ nav ul.open {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  color: #fff;
+  color: #C1121F;
   font-family: 'Miltonian Tattoo', 'Poppins';
   font-size: 1.2rem
 }
