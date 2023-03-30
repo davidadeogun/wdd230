@@ -93,10 +93,17 @@ let FirstDayTemp = document.querySelector('#firstdaytemp');
 let SecondDayTemp = document.querySelector('#seconddaytemp');
 let ThirdDayTemp = document.querySelector('#thirddaytemp');
 
+
 function getDayName(date) {
   const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   return days[date.getDay()];
 }
+
+function formatDate(date) {
+  const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  return `${monthNames[date.getMonth()]} ${date.getDate()}`;
+}
+
 
 function getNextNDays(n) {
   const days = [];
@@ -104,7 +111,7 @@ function getNextNDays(n) {
   for (let i = 0; i < n; i++) {
     const nextDay = new Date(today);
     nextDay.setDate(today.getDate() + i);
-    days.push(getDayName(nextDay));
+    days.push({name: getDayName(nextDay), date: formatDate(nextDay)});
   }
   return days;
 }
@@ -134,23 +141,24 @@ function displayResult(data) {
   }
 
   if (CurrentTemp) {
-    CurrentTemp.textContent = `${nextThreeDays[0]}: ${data.current.temp}°F`;
+    CurrentTemp.textContent = `${nextThreeDays[0].name}, ${nextThreeDays[0].date}: ${data.current.temp}°F`;
   }
 
   if (FirstDayTemp) {
     const temp = data.daily[1].temp.day.toFixed(2);
-   FirstDayTemp.textContent = `${nextThreeDays[1]}: ${temp}°F`;
+   FirstDayTemp.textContent = `${nextThreeDays[1].name} ,${nextThreeDays[1].date}: ${temp}°F`;
   }
 
   if (SecondDayTemp) {
     const temp = data.daily[2].temp.day.toFixed(2);
-    SecondDayTemp.textContent = `${nextThreeDays[2]}: ${temp}°F`;
+    SecondDayTemp.textContent = `${nextThreeDays[2].name} ,${nextThreeDays[2].date}: ${temp}°F`;
   }
 
   if (ThirdDayTemp) {
    const temp = data.daily[3].temp.day.toFixed(2);
-   ThirdDayTemp.textContent = `${nextThreeDays[3]}: ${temp}°F`;
+   ThirdDayTemp.textContent = `${nextThreeDays[3].name} ,${nextThreeDays[3].date}: ${temp}°F`;
   }
+
   if (WeatherIcon && WeatherDescription) {
     const srcicon = `http://openweathermap.org/img/w/${data.current.weather[0].icon}.png`;
     const description = data.current.weather[0].description;
