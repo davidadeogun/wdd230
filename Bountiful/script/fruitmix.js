@@ -49,7 +49,16 @@ function displaySubmittedDrinksCount() {
   }
 }
 
-
+//resets the form after each submission to prevent accidental submission
+function resetForm() {
+  document.getElementById("first-name").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("phone").value = "";
+  document.getElementById("fruits1").selectedIndex = 0;
+  document.getElementById("fruits2").selectedIndex = 0;
+  document.getElementById("fruits3").selectedIndex = 0;
+  document.getElementById("special-instructions").value = "";
+}
 
 
 
@@ -81,6 +90,7 @@ specialInstructions,
 displayOutput(order);
 updateSubmittedDrinksCount();
 //displaySubmittedDrinksCount();
+resetForm();
 }
 
 let fruits = [];

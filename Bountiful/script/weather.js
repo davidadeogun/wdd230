@@ -82,6 +82,9 @@ if (datefield) {
   datefield.innerHTML = `${fulldateUK}`;
 }
 
+
+
+
 // WEATHER FORECAST SCRIPT
 const url = "https://pro.openweathermap.org/data/2.5/forecast/hourly?q=Carlsbad,US&appid=45cbeba524e314291fb64c4344e17a93";
 let WeatherIcon = document.querySelector('#weathericon');

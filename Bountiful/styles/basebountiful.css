@@ -161,7 +161,7 @@ nav ul.open {
     padding: 75px;
     margin: 20px 20px 20px 25px;
 }
-.order-summary p {
+.order-summary p, .order-summary h3{
     text-align: center;
     margin-top: -50px;
 }
