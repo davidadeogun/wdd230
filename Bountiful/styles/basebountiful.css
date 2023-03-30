@@ -176,6 +176,13 @@ nav ul.open {
     padding: 75px;
     margin: 20px 20px 20px 25px;
 }
+.humidity {
+    display: flex;
+    
+}
+.humid {
+    margin-left: 10px;
+}
 .tempandweathericon-info {
     display: flex;
     flex-direction: row;

@@ -69,41 +69,52 @@ function processForm(event) {
   const email = document.getElementById("email").value;
   const phone = document.getElementById("phone").value;
   const fruit1Id = document.getElementById("fruits1").value;
-const fruit2Id = document.getElementById("fruits2").value;
-const fruit3Id = document.getElementById("fruits3").value;
-const specialInstructions = document.getElementById("special-instructions").value;
+  const fruit2Id = document.getElementById("fruits2").value;
+  const fruit3Id = document.getElementById("fruits3").value;
+  const specialInstructions = document.getElementById("special-instructions").value;
 
-const fruit1 = fruits.find(fruit => fruit.id === parseInt(fruit1Id));
-const fruit2 = fruits.find(fruit => fruit.id === parseInt(fruit2Id));
-const fruit3 = fruits.find(fruit => fruit.id === parseInt(fruit3Id));
+  const fruit1 = fruits.find(fruit => fruit.id === parseInt(fruit1Id));
+  const fruit2 = fruits.find(fruit => fruit.id === parseInt(fruit2Id));
+  const fruit3 = fruits.find(fruit => fruit.id === parseInt(fruit3Id));
 
-const order = {
-firstName,
-email,
-phone,
-fruit1,
-fruit2,
-fruit3,
-specialInstructions,
-};
+  const order = {
+    firstName,
+    email,
+    phone,
+    fruit1,
+    fruit2,
+    fruit3,
+    specialInstructions,
+  };
 
-displayOutput(order);
-updateSubmittedDrinksCount();
-//displaySubmittedDrinksCount();
-resetForm();
+  displayOutput(order);
+  updateSubmittedDrinksCount();
+  //displaySubmittedDrinksCount();
+  resetForm();
 }
+// All the other functions remain the same.
+
+document.addEventListener("DOMContentLoaded", function() {
+  const formElement = document.getElementById("order-form");
+
+  if (formElement) {
+    formElement.addEventListener("submit", processForm);
+  }
+});
 
 let fruits = [];
 
 fetch("fruits.json")
-.then(response => response.json())
-.then(data => {
-fruits = data;
-populateSelect(document.getElementById("fruits1"), fruits);
-populateSelect(document.getElementById("fruits2"), fruits);
-populateSelect(document.getElementById("fruits3"), fruits);
-});
+  .then(response => response.json())
+  .then(data => {
+    fruits = data;
+    const fruits1Select = document.getElementById("fruits1");
+    const fruits2Select = document.getElementById("fruits2");
+    const fruits3Select = document.getElementById("fruits3");
 
-document.getElementById("order-form").addEventListener("submit", processForm);
-
-
+    if (fruits1Select && fruits2Select && fruits3Select) {
+      populateSelect(fruits1Select, fruits);
+      populateSelect(fruits2Select, fruits);
+      populateSelect(fruits3Select, fruits);
+    }
+  });

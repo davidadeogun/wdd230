@@ -39,14 +39,7 @@ images.forEach(image => {
 
 
 
-
-
-
-
-
-
-
-
+//Hamburger button script
 function toggleMenu() {
   const primaryNav = document.querySelector("#primary-navigation");
   const hamburgerButton = document.querySelector("#hamburgerButton");
@@ -63,6 +56,9 @@ const x = document.querySelector("#hamburgerButton");
 if (x) {
   x.onclick = toggleMenu;
 }
+//End of Hamburger button script
+
+
 
 // Last Modified Date script
 const el = document.querySelector("#currently");
@@ -82,21 +78,26 @@ if (datefield) {
   datefield.innerHTML = `${fulldateUK}`;
 }
 
-
+// End of Last Modified Date script
 
 
 // WEATHER FORECAST SCRIPT
-const url = "https://pro.openweathermap.org/data/2.5/forecast/hourly?q=Carlsbad,US&appid=45cbeba524e314291fb64c4344e17a93";
+const url = "https://api.openweathermap.org/data/3.0/onecall?lat=33.158&lon=-117.351&exclude=minutely,hourly,alerts&appid=c2aca1c7991c8e388fe1ab63e0fe2cc9";
 let WeatherIcon = document.querySelector('#weathericon');
 let CurrentTemp = document.querySelector('#temp');
 let WeatherDescription = document.querySelector('#weather-description');
 let WeatherHumidity = document.querySelector('#humidity-value');
+let FirstDayTemp = document.querySelector('#firstdaytemp');
+let SecondDayTemp = document.querySelector('#seconddaytemp');
+let ThirdDayTemp = document.querySelector('#thirddaytemp');
+
 
 async function apiFetch() {
   try {
       const response = await fetch(url);
       if (response.ok) {
           const data = await response.json();
+          console.log(data)
           displayResult(data);
       } else {
           throw Error(await response.text());
@@ -106,18 +107,35 @@ async function apiFetch() {
   }
 }
 
+
+apiFetch();
+
 function displayResult(data) {
   if (WeatherHumidity) {
-      WeatherHumidity.textContent = data.main.humidity;
+      WeatherHumidity.textContent = data.current.humidity;
   }
 
   if (CurrentTemp) {
-      CurrentTemp.textContent = data.main.temp;
+      CurrentTemp.textContent = data.current.temp;
   }
 
+  if (FirstDayTemp) {
+    FirstDayTemp.textContent = data.daily[0].temp.day;
+  }
+
+  if (SecondDayTemp) {
+    SecondDayTemp.textContent = data.daily[1].temp.day;
+  }
+
+  if (ThirdDayTemp) {
+    ThirdDayTemp.textContent = data.daily[2].temp.day;
+  }
+
+  
+
   if (WeatherIcon && WeatherDescription) {
-      const srcicon = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-      const description = data.weather[0].description;
+      const srcicon = `http://openweathermap.org/img/w/${data.current.weather[0].icon}.png`;
+      const description = data.current.weather[0].description;
 
       WeatherIcon.setAttribute('src', srcicon);
       WeatherIcon.setAttribute('alt', description);
@@ -125,7 +143,6 @@ function displayResult(data) {
   }
 }
 
-apiFetch(); // Call the function to fetch and display the weather data
 
 
 
