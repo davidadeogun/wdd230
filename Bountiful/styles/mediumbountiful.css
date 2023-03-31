@@ -30,7 +30,7 @@
 
     #header-text {
         position: absolute;
-        top: 25%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 1;
@@ -80,7 +80,21 @@
         padding: 75px;
         margin: 20px 20px 20px 25px;
     }
-
+    .humidity {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tempandweathericon-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+   .threedayforecast {
+    justify-content: center;
+    align-items: center;
+   }
     .coastal-info {
         background-color: #FFF5DB;
         width: 94%;

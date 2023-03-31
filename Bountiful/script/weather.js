@@ -84,7 +84,7 @@ if (datefield) {
 
 
 // WEATHER FORECAST SCRIPT
-const url = "https://api.openweathermap.org/data/3.0/onecall?lat=33.158&lon=-117.351&exclude=minutely,hourly,alerts&appid=c2aca1c7991c8e388fe1ab63e0fe2cc9";
+const url = "https://api.openweathermap.org/data/3.0/onecall?lat=33.1581&lon=-117.3506&exclude=minutely,hourly,alerts&appid=c2aca1c7991c8e388fe1ab63e0fe2cc9&units=imperial";
 let WeatherIcon = document.querySelector('#weathericon');
 let CurrentTemp = document.querySelector('#temp');
 let WeatherDescription = document.querySelector('#weather-description');
@@ -95,7 +95,7 @@ let ThirdDayTemp = document.querySelector('#thirddaytemp');
 
 
 function getDayName(date) {
-  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
   return days[date.getDay()];
 }
 
@@ -121,7 +121,7 @@ async function apiFetch() {
     const response = await fetch(url);
     if (response.ok) {
       const data = await response.json();
-      console.log(data);
+      //console.log(data);
       displayResult(data);
     } else {
       throw Error(await response.text());
@@ -145,17 +145,17 @@ function displayResult(data) {
   }
 
   if (FirstDayTemp) {
-    const temp = data.daily[1].temp.day.toFixed(2);
+    const temp = data.daily[1].temp.day.toFixed(0);
    FirstDayTemp.textContent = `${nextThreeDays[1].name} ,${nextThreeDays[1].date}: ${temp}°F`;
   }
 
   if (SecondDayTemp) {
-    const temp = data.daily[2].temp.day.toFixed(2);
+    const temp = data.daily[2].temp.day.toFixed(0);
     SecondDayTemp.textContent = `${nextThreeDays[2].name} ,${nextThreeDays[2].date}: ${temp}°F`;
   }
 
   if (ThirdDayTemp) {
-   const temp = data.daily[3].temp.day.toFixed(2);
+   const temp = data.daily[3].temp.day.toFixed(0);
    ThirdDayTemp.textContent = `${nextThreeDays[3].name} ,${nextThreeDays[3].date}: ${temp}°F`;
   }
 
