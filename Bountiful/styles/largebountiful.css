@@ -22,11 +22,10 @@
 
     nav ul#primary-navigation {
         display: flex;
-
         justify-content: space-evenly;
         /*Centers the nav with space-between, evenly or around*/
         justify-content: right;
-        align-items: right;
+    
 
     }
 
